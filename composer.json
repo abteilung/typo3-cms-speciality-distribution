@@ -1,41 +1,70 @@
 {
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "http://composer.typo3.org/"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/Ecodev/speciality.git"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/Ecodev/speciality_distribution.git"
-    }
-  ],
-  "name": "ecodev/typo3-cms-speciality-distribution",
-  "description": "TYPO3 CMS Speciality Distribution",
-  "license": "GPL-2.0+",
-  "config": {
-    "vendor-dir": "Packages/Libraries",
-    "bin-dir": "bin"
-  },
-  "require": {
-    "typo3/cms": "6.2.*",
-    "typo3-ter/nc-staticfilecache": "*",
-    "typo3-ter/realurl": "*",
-    "typo3-ter/seo-basics": "*",
-    "ecodev/speciality": "dev-master",
-    "ecodev/speciality-distribution": "dev-master",
-    "typo3-ter/vidi": "*",
-    "typo3-ter/media": "*",
-    "typo3-ter/context-hints": "*",
-    "typo3-ter/typo3-console": "*",
-    "typo3-ter/fluidcontent": "*",
-    "typo3-ter/fluidpages": "*",
-    "typo3-ter/fluidcontent-core": "*",
-    "typo3-ter/fluidbootstraptheme": "*",
-    "typo3-ter/flux": "*",
-    "typo3-ter/vhs": "*"
-  }
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "http://composer.typo3.org/"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/Ecodev/speciality.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/Ecodev/speciality_distribution.git"
+		}
+	],
+	"name": "ecodev/typo3-cms-speciality-distribution",
+	"description": "TYPO3 CMS Speciality Distribution",
+	"license": "GPL-2.0+",
+	"require": {
+		"typo3/cms": "7.6.*",
+		"ecodev/speciality": "dev-master",
+		"ecodev/speciality-distribution": "dev-master"
+	},
+	"require-dev": {
+		"mikey179/vfsStream": "1.4.*@dev",
+		"phpunit/phpunit": "~4.7.0"
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"TYPO3\\CMS\\Backend\\Tests\\": "htdocs/typo3/sysext/backend/Tests/",
+			"TYPO3\\CMS\\Belog\\Tests\\": "htdocs/typo3/sysext/belog/Tests/",
+			"TYPO3\\CMS\\Beuser\\Tests\\": "htdocs/typo3/sysext/beuser/Tests/",
+			"TYPO3\\CMS\\Core\\Tests\\": "htdocs/typo3/sysext/core/Tests/",
+			"TYPO3\\CMS\\Dbal\\Tests\\": "htdocs/typo3/sysext/dbal/Tests/",
+			"TYPO3\\CMS\\Documentation\\Tests\\": "htdocs/typo3/sysext/documentation/Tests/",
+			"TYPO3\\CMS\\Extbase\\Tests\\": "htdocs/typo3/sysext/extbase/Tests/",
+			"TYPO3\\CMS\\Extensionmanager\\Tests\\": "htdocs/typo3/sysext/extensionmanager/Tests/",
+			"TYPO3\\CMS\\Felogin\\Tests\\": "htdocs/typo3/sysext/felogin/Tests/",
+			"TYPO3\\CMS\\Fluid\\Tests\\": "htdocs/typo3/sysext/fluid/Tests/",
+			"TYPO3\\CMS\\Form\\Tests\\": "htdocs/typo3/sysext/form/Tests/",
+			"TYPO3\\CMS\\Frontend\\Tests\\": "htdocs/typo3/sysext/frontend/Tests/",
+			"TYPO3\\CMS\\Impexp\\Tests\\": "htdocs/typo3/sysext/impexp/Tests/",
+			"TYPO3\\CMS\\IndexedSearch\\Tests\\": "htdocs/typo3/sysext/indexed_search/Tests/",
+			"TYPO3\\CMS\\Install\\Tests\\": "htdocs/typo3/sysext/install/Tests/",
+			"TYPO3\\CMS\\Lang\\Tests\\": "htdocs/typo3/sysext/lang/Tests/",
+			"TYPO3\\CMS\\Lowlevel\\Tests\\": "htdocs/typo3/sysext/lowlevel/Tests/",
+			"TYPO3\\CMS\\Mediace\\": "htdocs/typo3/sysext/mediace/Classes/",
+			"TYPO3\\CMS\\Mediace\\Tests\\": "htdocs/typo3/sysext/mediace/Tests/",
+			"TYPO3\\CMS\\Recordlist\\Tests\\": "htdocs/typo3/sysext/recordlist/Tests/",
+			"TYPO3\\CMS\\Reports\\Tests\\": "htdocs/typo3/sysext/reports/Tests/",
+			"TYPO3\\CMS\\Rsaauth\\Tests\\": "htdocs/typo3/sysext/rsaauth/Tests/",
+			"TYPO3\\CMS\\Saltedpasswords\\Tests\\": "htdocs/typo3/sysext/saltedpasswords/Tests/",
+			"TYPO3\\CMS\\Scheduler\\Tests\\": "htdocs/typo3/sysext/scheduler/Tests/",
+			"TYPO3\\CMS\\Sv\\Tests\\": "htdocs/typo3/sysext/sv/Tests/",
+			"TYPO3\\CMS\\Workspaces\\Tests\\": "htdocs/typo3/sysext/workspaces/Tests/"
+		},
+		"classmap": [
+			"htdocs/typo3/sysext/extbase/Tests/Unit/Object/Container/Fixtures/"
+		]
+	},
+	"config": {
+		"bin-dir": "bin"
+	},
+	"extra": {
+		"typo3/cms": {
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"web-dir": "htdocs"
+		}
+	}
 }

@@ -4,68 +4,34 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0d5676b651f5aeb6b53aaa0c57696b01",
-    "content-hash": "a0daa70bcfed950aa61abb159b33fd68",
+    "hash": "ebc4d9b918504cbf66bfc06d70f2a2a7",
+    "content-hash": "84059f85f6f670b156e103f38350ebce",
     "packages": [
         {
-            "name": "ecodev/speciality",
-            "version": "dev-master",
+            "name": "cogpowered/finediff",
+            "version": "0.3.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Ecodev/speciality.git",
-                "reference": "4900ee0ba369d8a6ef3710bb65932a1776f4a136"
-            },
-            "type": "typo3-cms-extension",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Based extension providing a set of configuration and templates for your website. Everyone is special...",
-            "homepage": "https://github.com/Ecodev/speciality.git",
-            "time": "2015-10-20 10:29:03"
-        },
-        {
-            "name": "ecodev/speciality-distribution",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Ecodev/speciality_distribution.git",
-                "reference": "c6cceb6d80891c52347f7da26cfca7c1d56e46c5"
-            },
-            "type": "typo3-cms-extension",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Delivers a special website just for you.",
-            "homepage": "https://github.com/Ecodev/speciality_speciality.git",
-            "time": "2015-10-22 08:01:01"
-        },
-        {
-            "name": "helhum/class-alias-loader",
-            "version": "1.1.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/helhum/class-alias-loader.git",
-                "reference": "22d49a54af4d3dc81b7b200355b0d2e67b826ad0"
+                "url": "https://github.com/cogpowered/FineDiff.git",
+                "reference": "339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/helhum/class-alias-loader/zipball/22d49a54af4d3dc81b7b200355b0d2e67b826ad0",
-                "reference": "22d49a54af4d3dc81b7b200355b0d2e67b826ad0",
+                "url": "https://api.github.com/repos/cogpowered/FineDiff/zipball/339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8",
+                "reference": "339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0"
+                "php": ">=5.3.0"
             },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Helhum\\ClassAliasLoader\\Composer\\Plugin",
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                }
+            "require-dev": {
+                "mockery/mockery": "*",
+                "phpunit/phpunit": "*"
             },
+            "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Helhum\\ClassAliasLoader\\": "Classes/"
+                "psr-0": {
+                    "cogpowered\\FineDiff": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -74,230 +40,965 @@
             ],
             "authors": [
                 {
-                    "name": "Helmut Hummel",
-                    "email": "info@helhum.io"
+                    "name": "Rob Crowe",
+                    "email": "rob@cogpowered.com"
+                },
+                {
+                    "name": "Raymond Hill"
                 }
             ],
-            "description": "Amends the composer class loader to support class aliases to provide backwards compatibility for packages",
-            "homepage": "http://github.com/helhum/class-alias-loader",
+            "description": "PHP implementation of a Fine granularity Diff engine",
+            "homepage": "https://github.com/cogpowered/FineDiff",
             "keywords": [
-                "alias",
-                "autoloader",
-                "classloader",
-                "composer"
+                "diff",
+                "finediff",
+                "opcode",
+                "string",
+                "text"
             ],
-            "time": "2015-06-11 14:08:07"
+            "time": "2014-05-19 10:25:02"
         },
         {
-            "name": "typo3-ter/context-hints",
-            "version": "1.2.2",
+            "name": "doctrine/instantiator",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/instantiator.git",
+                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d"
+            },
             "dist": {
-                "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/context_hints/1.2.2/t3x/",
-                "reference": null,
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8e884e78f9f0eb1329e445619e04456e64d8051d",
+                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d",
+                "shasum": ""
             },
             "require": {
-                "typo3/cms": ">= 6.2.0, <= 6.2.99"
+                "php": ">=5.3,<8.0-DEV"
             },
-            "replace": {
-                "typo3-ter/context_hints": "self.version"
+            "require-dev": {
+                "athletic/athletic": "~0.1.8",
+                "ext-pdo": "*",
+                "ext-phar": "*",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~2.0"
             },
-            "type": "typo3-cms-extension",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
-                    "name": "Fabien Udriot",
-                    "email": "fabien.udriot@typo3.org",
-                    "company": "",
-                    "username": "ecodev"
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com",
+                    "homepage": "http://ocramius.github.com/"
                 }
             ],
-            "description": "Displays a little message on the top of the Backend about the current context along with some useful info as tooltip.\n                    After configuring and installing the extension, reload the Backend and notice the additional info next to the TYPO3 logo.",
-            "time": "2015-05-13 18:45:00"
+            "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
+            "homepage": "https://github.com/doctrine/instantiator",
+            "keywords": [
+                "constructor",
+                "instantiate"
+            ],
+            "time": "2015-06-14 21:17:01"
         },
         {
-            "name": "typo3-ter/fluidbootstraptheme",
-            "version": "1.1.0",
-            "dist": {
-                "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/fluidbootstraptheme/1.1.0/t3x/",
-                "reference": null,
-                "shasum": null
+            "name": "ecodev/speciality",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ecodev/speciality.git",
+                "reference": "90cf21e626ec0f7bcc7fdda728f535590758c075"
             },
             "require": {
-                "typo3-ter/fluidcontent": ">= 4.1.0",
-                "typo3-ter/fluidpages": ">= 3.1.1",
-                "typo3-ter/flux": ">= 7.1.0",
-                "typo3-ter/vhs": ">= 2.0.2",
-                "typo3/cms": ">= 6.1.00, <= 6.2.99"
+                "fab/media": "4.*.*",
+                "fab/vidi": "2.*.*",
+                "fluidtypo3/fluidcontent": "4.*.*",
+                "fluidtypo3/fluidcontent_core": "1.*.*",
+                "fluidtypo3/fluidpages": "3.*.*",
+                "fluidtypo3/flux": "7.*.*",
+                "fluidtypo3/vhs": "2.*.*",
+                "helhum/typo3-console": "1.*.*",
+                "typo3-ter/nc-staticfilecache": "*",
+                "typo3-ter/realurl": "*",
+                "typo3-ter/seo-basics": "*"
             },
             "type": "typo3-cms-extension",
-            "authors": [
-                {
-                    "name": "Claus Due, Harry Glatz, Boris Schauer",
-                    "email": "claus@namelesscoder.net, glatz@analog.de, me@bschauer.de",
-                    "company": "NamelessCoder, analog multimedia, bschauer",
-                    "username": "randomresult"
-                }
+            "license": [
+                "GPL-2.0+"
             ],
-            "description": "A collection of Twitter Bootstrap oriented Fluid Content Elements and Pages written for EXT:fluidcontent and EXT:fluidpages using ViewHelpers from EXT:vhs",
-            "time": "2014-09-30 13:31:15"
+            "description": "Based extension providing a set of configuration and templates for your website. Everyone is special...",
+            "homepage": "https://github.com/Ecodev/speciality.git",
+            "time": "2015-12-03 17:37:52"
         },
         {
-            "name": "typo3-ter/fluidcontent",
-            "version": "4.3.2",
-            "dist": {
-                "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/fluidcontent/4.3.2/t3x/",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "typo3-ter/flux": ">= 7.2.0, <= 7.3.99",
-                "typo3/cms": ">= 6.2.0, <= 7.4.99"
+            "name": "ecodev/speciality-distribution",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ecodev/speciality_distribution.git",
+                "reference": "34efd9226b07cc81d6a8409d95868d198c138250"
             },
             "type": "typo3-cms-extension",
             "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "authors": [
-                {
-                    "name": "FluidTYPO3 Team",
-                    "email": "claus@namelesscoder.net",
-                    "company": "",
-                    "username": "fluidtypo3"
+                "psr-4": {
+                    "Ecodev\\SpecialityDistribution\\": "Classes"
                 }
+            },
+            "license": [
+                "GPL-2.0+"
             ],
-            "description": "Fluid Content Element engine - integrates extremely compact and highly dynamic content element templates written in Fluid. See: https://github.com/FluidTYPO3/fluidcontent",
-            "time": "2015-09-10 22:22:32"
+            "description": "Delivers a special website just for you.",
+            "homepage": "https://github.com/Ecodev/speciality_speciality.git",
+            "time": "2015-12-03 18:00:05"
         },
         {
-            "name": "typo3-ter/fluidcontent-core",
-            "version": "1.2.0",
+            "name": "fab/media",
+            "version": "4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabarea/media.git",
+                "reference": "3e965ea1b9c0265b8af04e23bdf65817246095b5"
+            },
             "dist": {
-                "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/fluidcontent_core/1.2.0/t3x/",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "typo3-ter/flux": ">= 7.2.0, <= 7.2.99",
-                "typo3-ter/vhs": ">= 2.1.0, <= 2.3.99",
-                "typo3/cms": ">= 6.2.0, <= 7.4.99"
-            },
-            "replace": {
-                "typo3-ter/fluidcontent_core": "self.version"
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabarea/media/zipball/3e965ea1b9c0265b8af04e23bdf65817246095b5",
+                "reference": "3e965ea1b9c0265b8af04e23bdf65817246095b5",
+                "shasum": ""
             },
             "type": "typo3-cms-extension",
-            "autoload": {
-                "classmap": [
-                    ""
+            "extra": {
+                "autoload-case-sensitivity": false,
+                "class-alias-maps": [
+                    "Migrations/Code/ClassAliasMap.php"
                 ]
             },
-            "authors": [
-                {
-                    "name": "FluidTYPO3 Team",
-                    "email": "claus@namelesscoder.net",
-                    "company": "",
-                    "username": "fluidtypo3"
-                }
-            ],
-            "description": "Not CSS styled content - Fluid styled content",
-            "time": "2015-08-08 18:24:49"
-        },
-        {
-            "name": "typo3-ter/fluidpages",
-            "version": "3.3.1",
-            "dist": {
-                "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/fluidpages/3.3.1/t3x/",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "typo3-ter/flux": ">= 7.2.0, <= 7.3.99",
-                "typo3/cms": ">= 6.2.0, <= 7.4.99"
-            },
-            "conflict": {
-                "typo3-ter/templavoila": "*"
-            },
-            "type": "typo3-cms-extension",
             "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "authors": [
-                {
-                    "name": "FluidTYPO3 Team",
-                    "email": "claus@namelesscoder.net",
-                    "company": "",
-                    "username": "fluidtypo3"
+                "psr-4": {
+                    "Fab\\Media\\": "Classes/"
                 }
-            ],
-            "description": "Fluid Page Template engine - integrates compact and highly dynamic page templates with all the benefits of Fluid.",
-            "time": "2015-08-08 18:15:52"
-        },
-        {
-            "name": "typo3-ter/flux",
-            "version": "7.2.3",
-            "dist": {
-                "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/flux/7.2.3/t3x/",
-                "reference": null,
-                "shasum": null
             },
-            "require": {
-                "typo3/cms": ">= 6.2.0, <= 7.4.99"
-            },
-            "type": "typo3-cms-extension",
-            "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "authors": [
-                {
-                    "name": "FluidTYPO3 Team",
-                    "email": "claus@namelesscoder.net",
-                    "company": "",
-                    "username": "fluidtypo3"
-                }
-            ],
-            "description": "Backend form and frontend content rendering assistance API with focus on productivity.",
-            "time": "2015-09-30 15:29:21"
-        },
-        {
-            "name": "typo3-ter/media",
-            "version": "3.7.0",
-            "dist": {
-                "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/media/3.7.0/t3x/",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "typo3-ter/vidi": "*",
-                "typo3/cms": ">= 6.2.0, <= 6.2.99"
-            },
-            "type": "typo3-cms-extension",
-            "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "authors": [
-                {
-                    "name": "Fabien Udriot",
-                    "email": "fabien.udriot@typo3.org",
-                    "company": "",
-                    "username": "ecodev"
-                }
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
             ],
             "description": "Media management system for TYPO3 CMS.",
-            "time": "2015-10-17 09:23:46"
+            "homepage": "https://github.com/fabarea/media",
+            "keywords": [
+                "Media management",
+                "TYPO3 CMS"
+            ],
+            "time": "2015-12-03 17:02:12"
+        },
+        {
+            "name": "fab/vidi",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabarea/vidi.git",
+                "reference": "1d303155cf69856c765b679d2cd8a286cf50a364"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabarea/vidi/zipball/1d303155cf69856c765b679d2cd8a286cf50a364",
+                "reference": "1d303155cf69856c765b679d2cd8a286cf50a364",
+                "shasum": ""
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "autoload-case-sensitivity": false,
+                "class-alias-maps": [
+                    "Migrations/Code/ClassAliasMap.php"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fab\\Vidi\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Generic listing of records with versatile ways of interacting with the data, e.g. advanced filter, inline editing, mass editing, ... Veni, vidi, vici!",
+            "homepage": "https://github.com/fabarea/vidi",
+            "keywords": [
+                "TYPO3 CMS",
+                "generic listing"
+            ],
+            "time": "2015-12-03 16:21:46"
+        },
+        {
+            "name": "fluidtypo3/fluidcontent",
+            "version": "4.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FluidTYPO3/fluidcontent.git",
+                "reference": "5cd232cf98bf7401b2addcdf58ac503aa782ec96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FluidTYPO3/fluidcontent/zipball/5cd232cf98bf7401b2addcdf58ac503aa782ec96",
+                "reference": "5cd232cf98bf7401b2addcdf58ac503aa782ec96",
+                "shasum": ""
+            },
+            "require": {
+                "fluidtypo3/flux": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "fluidtypo3/development": "*",
+                "fluidtypo3/flux": "dev-development"
+            },
+            "suggest": {
+                "fluidtypo3/fluidpages": "Gives the ability to render Page Templates with pure fluid."
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "FluidTYPO3\\Fluidcontent\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Create Flexible Content elements in pure fluid",
+            "homepage": "https://fluidtypo3.org",
+            "keywords": [
+                "TYPO3 CMS",
+                "bootstrap",
+                "fedext",
+                "fluid",
+                "fluidcontent",
+                "flux",
+                "templating"
+            ],
+            "time": "2015-11-21 14:11:30"
+        },
+        {
+            "name": "fluidtypo3/fluidcontent_core",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FluidTYPO3/fluidcontent_core.git",
+                "reference": "cc844701fa907be5db7fa83de632aaf7b31ae3dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FluidTYPO3/fluidcontent_core/zipball/cc844701fa907be5db7fa83de632aaf7b31ae3dd",
+                "reference": "cc844701fa907be5db7fa83de632aaf7b31ae3dd",
+                "shasum": ""
+            },
+            "require": {
+                "fluidtypo3/flux": "*",
+                "fluidtypo3/vhs": "*"
+            },
+            "require-dev": {
+                "fluidtypo3/development": "*",
+                "fluidtypo3/flux": "dev-development",
+                "fluidtypo3/vhs": "dev-development"
+            },
+            "suggest": {
+                "fluidbt/fluidbootstraptheme": "Provides Twitter Bootstrap templates for fluidcontent and fluidpages",
+                "fluidtypo3/fluidcontent": "Gives the ability to render Content Templates with pure fluid.",
+                "fluidtypo3/fluidpages": "Gives the ability to render Page Templates with pure fluid."
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "FluidTYPO3\\FluidcontentCore\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Replace css_styled_content with your own templates",
+            "homepage": "http://fluidtypo3.org/",
+            "keywords": [
+                "TYPO3 CMS",
+                "bootstrap",
+                "fedext",
+                "fluid",
+                "fluidcontent",
+                "flux",
+                "templating"
+            ],
+            "time": "2015-11-23 10:31:32"
+        },
+        {
+            "name": "fluidtypo3/fluidpages",
+            "version": "3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FluidTYPO3/fluidpages.git",
+                "reference": "8528e2f1f9f094b23b40da3353fe7c0f1c2fce3a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FluidTYPO3/fluidpages/zipball/8528e2f1f9f094b23b40da3353fe7c0f1c2fce3a",
+                "reference": "8528e2f1f9f094b23b40da3353fe7c0f1c2fce3a",
+                "shasum": ""
+            },
+            "require": {
+                "fluidtypo3/flux": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "fluidtypo3/development": "*",
+                "fluidtypo3/flux": "dev-development"
+            },
+            "suggest": {
+                "fluidtypo3/fluidcontent": "Gives the ability to render custom content elements with pure fluid.",
+                "fluidtypo3/fluidcontent_core": "Gives the ability to render core content elements with pure fluid."
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "FluidTYPO3\\Fluidpages\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "The fluidpages package from FluidTYPO3",
+            "homepage": "http://fluidtypo3.org",
+            "keywords": [
+                "TYPO3 CMS",
+                "fedext",
+                "fluid",
+                "fluidpages",
+                "flux",
+                "templating"
+            ],
+            "time": "2015-11-21 14:23:14"
+        },
+        {
+            "name": "fluidtypo3/flux",
+            "version": "7.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FluidTYPO3/flux.git",
+                "reference": "b3acbf1dff0987122171e2709d50b312880d3751"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FluidTYPO3/flux/zipball/b3acbf1dff0987122171e2709d50b312880d3751",
+                "reference": "b3acbf1dff0987122171e2709d50b312880d3751",
+                "shasum": ""
+            },
+            "require-dev": {
+                "fluidtypo3/development": "*"
+            },
+            "suggest": {
+                "fluidtypo3/fluidcontent": "Gives the ability to render Content Templates with pure fluid.",
+                "fluidtypo3/fluidcontent_core": "Gives the ability to render core content elements with pure fluid.",
+                "fluidtypo3/fluidpages": "Gives the ability to render Page Templates with pure fluid.",
+                "fluidtypo3/vhs": "ViewHelper library for Fluid templates."
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "FluidTYPO3\\Flux\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "The flux package from FluidTYPO3",
+            "homepage": "http://fluidtypo3.org",
+            "time": "2015-11-20 00:26:32"
+        },
+        {
+            "name": "fluidtypo3/vhs",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FluidTYPO3/vhs.git",
+                "reference": "59f7cd988b19797fd496f99481c8d69b455b78eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FluidTYPO3/vhs/zipball/59f7cd988b19797fd496f99481c8d69b455b78eb",
+                "reference": "59f7cd988b19797fd496f99481c8d69b455b78eb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "fluidtypo3/development": "*"
+            },
+            "suggest": {
+                "ext-tidy": "Allows to make use of the tidy ViewHelper"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "FluidTYPO3\\Vhs\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "The vhs package from FluidTYPO3",
+            "homepage": "https://fluidtypo3.org",
+            "keywords": [
+                "TYPO3 CMS",
+                "fedext",
+                "fluid",
+                "templating",
+                "utility",
+                "viewhelper"
+            ],
+            "time": "2015-11-19 22:46:54"
+        },
+        {
+            "name": "helhum/typo3-console",
+            "version": "1.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/helhum/typo3_console.git",
+                "reference": "6026db4a9d68dacced2029114c3330bd5e52a18c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/helhum/typo3_console/zipball/6026db4a9d68dacced2029114c3330bd5e52a18c",
+                "reference": "6026db4a9d68dacced2029114c3330bd5e52a18c",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": ">=7.4.0,<8.0"
+            },
+            "replace": {
+                "typo3-ter/typo3-console": "self.version",
+                "typo3_console": "self.version"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "1.4.*@dev",
+                "namelesscoder/typo3-repository-client": "1.1.x-dev",
+                "phpunit/phpunit": "~4.7.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                },
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web",
+                    "Package": {
+                        "partOfMinimalUsableSystem": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Helhum\\Typo3Console\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Helmut Hummel",
+                    "email": "info@helhum.io",
+                    "homepage": "http://helhum.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A reliable and powerful command line interface for TYPO3 CMS",
+            "homepage": "http://insight.helhum.io/post/104528981610/about-the-beauty-and-power-of-typo3-console",
+            "keywords": [
+                "cli",
+                "command",
+                "commandline",
+                "console",
+                "typo3"
+            ],
+            "time": "2015-11-23 21:09:07"
+        },
+        {
+            "name": "pear/http_request2",
+            "version": "v2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/HTTP_Request2.git",
+                "reference": "d6c81670c504045248c1afdf896bb9a3288158de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/HTTP_Request2/zipball/d6c81670c504045248c1afdf896bb9a3288158de",
+                "reference": "d6c81670c504045248c1afdf896bb9a3288158de",
+                "shasum": ""
+            },
+            "require": {
+                "pear/net_url2": ">=2.0.0",
+                "pear/pear_exception": "*",
+                "php": ">=5.2.0"
+            },
+            "suggest": {
+                "ext-fileinfo": "Adds support for looking up mime-types using finfo.",
+                "ext-zlib": "Allows handling gzip compressed responses.",
+                "lib-curl": "Allows using cURL as a request backend.",
+                "lib-openssl": "Allows handling SSL requests when not using cURL."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "HTTP_Request2": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Alexey Borzov",
+                    "email": "avb@php.net",
+                    "role": "Developer HTML_Common2"
+                }
+            ],
+            "description": "Provides an easy way to perform HTTP requests.",
+            "homepage": "http://pear.php.net/package/HTTP_Request2",
+            "keywords": [
+                "PEAR",
+                "curl",
+                "http",
+                "request"
+            ],
+            "time": "2014-01-16 17:27:21"
+        },
+        {
+            "name": "pear/net_url2",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/Net_URL2.git",
+                "reference": "fa9b1ecb3c3e640d4a54d58d681a4cb7524f209e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/Net_URL2/zipball/fa9b1ecb3c3e640d4a54d58d681a4cb7524f209e",
+                "reference": "fa9b1ecb3c3e640d4a54d58d681a4cb7524f209e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.1.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=3.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "Net/URL2.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "David Coallier",
+                    "email": "davidc@php.net"
+                },
+                {
+                    "name": "Tom Klingenberg",
+                    "email": "tkli@php.net"
+                },
+                {
+                    "name": "Christian Schmidt",
+                    "email": "chmidt@php.net"
+                }
+            ],
+            "description": "Class for parsing and handling URL. Provides parsing of URLs into their constituent parts (scheme, host, path etc.), URL generation, and resolving of relative URLs.",
+            "homepage": "https://github.com/pear/Net_URL2",
+            "keywords": [
+                "PEAR",
+                "net",
+                "networking",
+                "rfc3986",
+                "uri",
+                "url"
+            ],
+            "time": "2015-04-18 17:36:57"
+        },
+        {
+            "name": "pear/pear_exception",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/PEAR_Exception.git",
+                "reference": "8c18719fdae000b690e3912be401c76e406dd13b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/8c18719fdae000b690e3912be401c76e406dd13b",
+                "reference": "8c18719fdae000b690e3912be401c76e406dd13b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=4.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "class",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "PEAR": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "."
+            ],
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Helgi Thormar",
+                    "email": "dufuz@php.net"
+                },
+                {
+                    "name": "Greg Beaver",
+                    "email": "cellog@php.net"
+                }
+            ],
+            "description": "The PEAR Exception base class.",
+            "homepage": "https://github.com/pear/PEAR_Exception",
+            "keywords": [
+                "exception"
+            ],
+            "time": "2015-02-10 20:07:52"
+        },
+        {
+            "name": "phpwhois/idna-convert",
+            "version": "v0.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpWhois/idna-convert.git",
+                "reference": "ea337954b43ae47f5ebba97c19d309081bebc46e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpWhois/idna-convert/zipball/ea337954b43ae47f5ebba97c19d309081bebc46e",
+                "reference": "ea337954b43ae47f5ebba97c19d309081bebc46e",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.8.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "idna_convert.class.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Sommerfeld",
+                    "email": "phlymail@phlylabs.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dmitry Lukashin",
+                    "email": "dmitry@lukashin.ru",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "idna-convert library based on http://idnaconv.phlymail.de/",
+            "homepage": "http://idnaconv.phlymail.de/",
+            "keywords": [
+                "idn",
+                "idna",
+                "php"
+            ],
+            "time": "2014-12-26 04:51:08"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2015-05-04 20:22:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Psr\\Log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "swiftmailer/swiftmailer",
+            "version": "v5.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swiftmailer/swiftmailer.git",
+                "reference": "0697e6aa65c83edf97bb0f23d8763f94e3f11421"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/0697e6aa65c83edf97bb0f23d8763f94e3f11421",
+                "reference": "0697e6aa65c83edf97bb0f23d8763f94e3f11421",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.1,<0.9.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.4-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "lib/swift_required.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Corbyn"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Swiftmailer, free feature-rich PHP mailer",
+            "homepage": "http://swiftmailer.org",
+            "keywords": [
+                "email",
+                "mail",
+                "mailer"
+            ],
+            "time": "2015-06-06 14:19:39"
+        },
+        {
+            "name": "symfony/console",
+            "version": "v2.7.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/console.git",
+                "reference": "16bb1cb86df43c90931df65f529e7ebd79636750"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/console/zipball/16bb1cb86df43c90931df65f529e7ebd79636750",
+                "reference": "16bb1cb86df43c90931df65f529e7ebd79636750",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/event-dispatcher": "~2.1",
+                "symfony/process": "~2.1"
+            },
+            "suggest": {
+                "psr/log": "For using the console logger",
+                "symfony/event-dispatcher": "",
+                "symfony/process": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Console\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Console Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-11-18 09:54:26"
+        },
+        {
+            "name": "symfony/finder",
+            "version": "v2.7.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "a06a0c0ff7db3736a50d530c908cca547bf13da9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/a06a0c0ff7db3736a50d530c908cca547bf13da9",
+                "reference": "a06a0c0ff7db3736a50d530c908cca547bf13da9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Finder\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Finder Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-10-30 20:10:21"
         },
         {
             "name": "typo3-ter/nc-staticfilecache",
@@ -333,10 +1034,10 @@
         },
         {
             "name": "typo3-ter/realurl",
-            "version": "1.13.4",
+            "version": "1.13.5",
             "dist": {
                 "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/realurl/1.13.4/t3x/",
+                "url": "http://typo3.org/extensions/repository/download/realurl/1.13.5/t3x/",
                 "reference": null,
                 "shasum": null
             },
@@ -363,7 +1064,7 @@
                 }
             ],
             "description": "Creates nice looking URLs for TYPO3 pages: converts http://example.com/index.phpid12345&L2 to http://example.com/path/to/your/page/. Please, ask for free support in TYPO3 mailing lists or contact the maintainer for paid support.",
-            "time": "2015-08-28 13:59:43"
+            "time": "2015-11-16 11:02:33"
         },
         {
             "name": "typo3-ter/seo-basics",
@@ -379,10 +1080,14 @@
                 "typo3/cms": ">= 6.2.0, <= 7.9.99"
             },
             "replace": {
-                "seo_basics": "0.9.0",
-                "typo3-ext/seo_basics": "0.9.0"
+                "typo3-ter/seo_basics": "self.version"
             },
             "type": "typo3-cms-extension",
+            "autoload": {
+                "classmap": [
+                    ""
+                ]
+            },
             "authors": [
                 {
                     "name": "Benni Mack",
@@ -395,118 +1100,94 @@
             "time": "2014-12-08 17:00:12"
         },
         {
-            "name": "typo3-ter/typo3-console",
-            "version": "1.1.6",
+            "name": "typo3/class-alias-loader",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3/class-alias-loader.git",
+                "reference": "a9dd295c81ed0b51455644be420ab9210cad688f"
+            },
             "dist": {
-                "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/typo3_console/1.1.6/t3x/",
-                "reference": null,
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3/class-alias-loader/zipball/a9dd295c81ed0b51455644be420ab9210cad688f",
+                "reference": "a9dd295c81ed0b51455644be420ab9210cad688f",
+                "shasum": ""
             },
             "require": {
-                "typo3/cms": ">= 6.2.6, <= 7.2.99"
+                "composer-plugin-api": "^1.0",
+                "php": ">=5.3.7"
             },
             "replace": {
-                "typo3-ter/typo3_console": "self.version"
+                "helhum/class-alias-loader": "*"
             },
-            "type": "typo3-cms-extension",
+            "require-dev": {
+                "composer/composer": "dev-master",
+                "mikey179/vfsstream": "1.4.*@dev",
+                "phpunit/phpunit": "~4.7.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "TYPO3\\ClassAliasLoader\\Plugin",
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
-                "classmap": [
-                    ""
-                ]
+                "psr-4": {
+                    "TYPO3\\ClassAliasLoader\\": "src/"
+                }
             },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Helmut Hummel",
-                    "email": "helmut.hummel@typo3.org",
-                    "company": "",
-                    "username": "helhum"
+                    "email": "info@helhum.io"
                 }
             ],
-            "description": "A reliable and powerful command line interface for TYPO3 CMS",
-            "time": "2015-10-01 09:49:39"
-        },
-        {
-            "name": "typo3-ter/vhs",
-            "version": "2.3.3",
-            "dist": {
-                "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/vhs/2.3.3/t3x/",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "php": ">= 5.4.0, <= 5.6.99",
-                "typo3/cms": ">= 6.2.0, <= 7.99.99"
-            },
-            "type": "typo3-cms-extension",
-            "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "authors": [
-                {
-                    "name": "FluidTYPO3 Team",
-                    "email": "claus@namelesscoder.net",
-                    "company": "",
-                    "username": "fluidtypo3"
-                }
+            "description": "Amends the composer class loader to support class aliases to provide backwards compatibility for packages",
+            "homepage": "http://github.com/TYPO3/class-alias-loader",
+            "keywords": [
+                "alias",
+                "autoloader",
+                "classloader",
+                "composer"
             ],
-            "description": "A collection of ViewHelpers to perform rendering tasks which are not natively supported by Fluid - for example: advanced formatters, math calculators, specialized conditions and Iterator/Array calculators and processors",
-            "time": "2015-05-20 13:14:23"
-        },
-        {
-            "name": "typo3-ter/vidi",
-            "version": "1.2.0",
-            "dist": {
-                "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/vidi/1.2.0/t3x/",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "typo3/cms": ">= 6.2.0, <= 6.2.99"
-            },
-            "type": "typo3-cms-extension",
-            "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "authors": [
-                {
-                    "name": "Fabien Udriot",
-                    "email": "fabien.udriot@typo3.org",
-                    "company": "",
-                    "username": "ecodev"
-                }
-            ],
-            "description": "Generic listing of records with versatile ways of interacting with the data, e.g. advanced filter, inline editing, mass editing, ... Veni, vidi, vici!",
-            "time": "2015-10-17 09:25:58"
+            "time": "2015-10-06 10:25:44"
         },
         {
             "name": "typo3/cms",
-            "version": "6.2.15",
+            "version": "7.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "8f9fa5948c4bd1f1cf2fd59114ffed42bd66f619"
+                "reference": "a2585ba26b9df87ef67fdbb4f53d2f1a891d919f"
             },
             "dist": {
-                "type": "tar",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/8f9fa5948c4bd1f1cf2fd59114ffed42bd66f619",
-                "reference": "6.2.15",
-                "shasum": "8e8dde23a05fdb868702846f3ca9f6f96dd48738"
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/a2585ba26b9df87ef67fdbb4f53d2f1a891d919f",
+                "reference": "a2585ba26b9df87ef67fdbb4f53d2f1a891d919f",
+                "shasum": ""
             },
             "require": {
+                "cogpowered/finediff": "~0.3.1",
+                "doctrine/instantiator": "~1.0.4",
                 "ext-fileinfo": "*",
                 "ext-pcre": "*",
                 "ext-session": "*",
                 "ext-xml": "*",
-                "helhum/class-alias-loader": "1.1.5",
-                "php": ">=5.3.7",
-                "typo3/cms-composer-installers": "1.1.4"
+                "pear/http_request2": "~2.2.1",
+                "php": ">=5.5.0",
+                "phpwhois/idna-convert": "~0.8.2",
+                "psr/http-message": "~1.0",
+                "psr/log": "1.0.*@dev",
+                "swiftmailer/swiftmailer": "~5.4.1",
+                "symfony/console": "~2.7.0",
+                "symfony/finder": "~2.7.0",
+                "typo3/class-alias-loader": "^1.0",
+                "typo3/cms-composer-installers": "^1.2.2"
             },
             "replace": {
                 "typo3/cms-about": "self.version",
@@ -515,7 +1196,6 @@
                 "typo3/cms-backend": "self.version",
                 "typo3/cms-belog": "self.version",
                 "typo3/cms-beuser": "self.version",
-                "typo3/cms-cms": "self.version",
                 "typo3/cms-context-help": "self.version",
                 "typo3/cms-core": "self.version",
                 "typo3/cms-cshmanual": "self.version",
@@ -524,12 +1204,12 @@
                 "typo3/cms-documentation": "self.version",
                 "typo3/cms-extbase": "self.version",
                 "typo3/cms-extensionmanager": "self.version",
-                "typo3/cms-extra-page-cm-options": "self.version",
                 "typo3/cms-feedit": "self.version",
                 "typo3/cms-felogin": "self.version",
                 "typo3/cms-filelist": "self.version",
                 "typo3/cms-filemetadata": "self.version",
                 "typo3/cms-fluid": "self.version",
+                "typo3/cms-fluid-styled-content": "self.version",
                 "typo3/cms-form": "self.version",
                 "typo3/cms-frontend": "self.version",
                 "typo3/cms-func": "self.version",
@@ -544,8 +1224,6 @@
                 "typo3/cms-linkvalidator": "self.version",
                 "typo3/cms-lowlevel": "self.version",
                 "typo3/cms-opendocs": "self.version",
-                "typo3/cms-openid": "self.version",
-                "typo3/cms-perm": "self.version",
                 "typo3/cms-recordlist": "self.version",
                 "typo3/cms-recycler": "self.version",
                 "typo3/cms-reports": "self.version",
@@ -568,8 +1246,8 @@
                 "typo3/cms-workspaces": "self.version"
             },
             "require-dev": {
-                "mikey179/vfsstream": "1.3.*@dev",
-                "phpunit/phpunit": "~4.7.0"
+                "mikey179/vfsstream": "1.6.0",
+                "phpunit/phpunit": "~4.8.0"
             },
             "suggest": {
                 "ext-gd": "GDlib/Freetype is required for building images with text (GIFBUILDER) and can also be used to scale images",
@@ -580,46 +1258,78 @@
             },
             "type": "typo3-cms-core",
             "extra": {
+                "typo3/class-alias-loader": {
+                    "always-add-alias-loader": true
+                },
                 "branch-alias": {
-                    "dev-TYPO3_6-2": "6.2.x-dev"
-                },
-                "autoload-case-sensitivity": false,
-                "class-alias-maps": [
-                    "typo3/sysext/backend/Migrations/Code/ClassAliasMap.php",
-                    "typo3/sysext/core/Migrations/Code/ClassAliasMap.php",
-                    "typo3/sysext/cshmanual/Migrations/Code/ClassAliasMap.php",
-                    "typo3/sysext/extbase/Migrations/Code/ClassAliasMap.php",
-                    "typo3/sysext/extensionmanager/Migrations/Code/ClassAliasMap.php",
-                    "typo3/sysext/fluid/Migrations/Code/ClassAliasMap.php",
-                    "typo3/sysext/frontend/Migrations/Code/ClassAliasMap.php",
-                    "typo3/sysext/install/Migrations/Code/ClassAliasMap.php",
-                    "typo3/sysext/lang/Migrations/Code/ClassAliasMap.php",
-                    "typo3/sysext/recordlist/Migrations/Code/ClassAliasMap.php",
-                    "typo3/sysext/saltedpasswords/Migrations/Code/ClassAliasMap.php",
-                    "typo3/sysext/sv/Migrations/Code/ClassAliasMap.php"
-                ]
-            },
-            "autoload": {
-                "psr-0": {
-                    "TYPO3\\Flow\\": "typo3/sysext/core/Resources/PHP/TYPO3.Flow/Classes/"
-                },
-                "psr-4": {
-                    "Psr\\Log\\": "typo3/contrib/Psr/Log/",
-                    "TYPO3\\CMS\\Backend\\": "typo3/sysext/backend/Classes/",
-                    "TYPO3\\CMS\\Core\\": "typo3/sysext/core/Classes/",
-                    "TYPO3\\CMS\\Cshmanual\\": "typo3/sysext/cshmanual/Classes/",
-                    "TYPO3\\CMS\\Extbase\\": "typo3/sysext/extbase/Classes/",
-                    "TYPO3\\CMS\\Extensionmanager\\": "typo3/sysext/extensionmanager/Classes/",
-                    "TYPO3\\CMS\\Fluid\\": "typo3/sysext/fluid/Classes/",
-                    "TYPO3\\CMS\\Frontend\\": "typo3/sysext/frontend/Classes/",
-                    "TYPO3\\CMS\\Install\\": "typo3/sysext/install/Classes/",
-                    "TYPO3\\CMS\\Lang\\": "typo3/sysext/lang/Classes/",
-                    "TYPO3\\CMS\\Recordlist\\": "typo3/sysext/recordlist/Classes/",
-                    "TYPO3\\CMS\\Saltedpasswords\\": "typo3/sysext/saltedpasswords/Classes/",
-                    "TYPO3\\CMS\\Sv\\": "typo3/sysext/sv/Classes/"
+                    "dev-master": "7.x-dev"
                 }
             },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\About\\": "typo3/sysext/about/Classes/",
+                    "TYPO3\\CMS\\Aboutmodules\\": "typo3/sysext/aboutmodules/Classes/",
+                    "TYPO3\\CMS\\Backend\\": "typo3/sysext/backend/Classes/",
+                    "TYPO3\\CMS\\Belog\\": "typo3/sysext/belog/Classes/",
+                    "TYPO3\\CMS\\Beuser\\": "typo3/sysext/beuser/Classes/",
+                    "TYPO3\\CMS\\ContextHelp\\": "typo3/sysext/context_help/Classes/",
+                    "TYPO3\\CMS\\Core\\": "typo3/sysext/core/Classes/",
+                    "TYPO3\\CMS\\Cshmanual\\": "typo3/sysext/cshmanual/Classes/",
+                    "TYPO3\\CMS\\CssStyledContent\\": "typo3/sysext/css_styled_content/Classes/",
+                    "TYPO3\\CMS\\Dbal\\": "typo3/sysext/dbal/Classes/",
+                    "TYPO3\\CMS\\Documentation\\": "typo3/sysext/documentation/Classes/",
+                    "TYPO3\\CMS\\Extbase\\": "typo3/sysext/extbase/Classes/",
+                    "TYPO3\\CMS\\Extensionmanager\\": "typo3/sysext/extensionmanager/Classes/",
+                    "TYPO3\\CMS\\Feedit\\": "typo3/sysext/feedit/Classes/",
+                    "TYPO3\\CMS\\Felogin\\": "typo3/sysext/felogin/Classes/",
+                    "TYPO3\\CMS\\Filelist\\": "typo3/sysext/filelist/Classes/",
+                    "TYPO3\\CMS\\Fluid\\": "typo3/sysext/fluid/Classes/",
+                    "TYPO3\\CMS\\FluidStyledContent\\": "typo3/sysext/fluid_styled_content/Classes/",
+                    "TYPO3\\CMS\\Form\\": "typo3/sysext/form/Classes/",
+                    "TYPO3\\CMS\\Frontend\\": "typo3/sysext/frontend/Classes/",
+                    "TYPO3\\CMS\\Func\\": "typo3/sysext/func/Classes/",
+                    "TYPO3\\CMS\\Impexp\\": "typo3/sysext/impexp/Classes/",
+                    "TYPO3\\CMS\\IndexedSearch\\": "typo3/sysext/indexed_search/Classes/",
+                    "TYPO3\\CMS\\IndexedSearchMysql\\": "typo3/sysext/indexed_search_mysql/Classes/",
+                    "TYPO3\\CMS\\Info\\": "typo3/sysext/info/Classes/",
+                    "TYPO3\\CMS\\InfoPagetsconfig\\": "typo3/sysext/info_pagetsconfig/Classes/",
+                    "TYPO3\\CMS\\Install\\": "typo3/sysext/install/Classes/",
+                    "TYPO3\\CMS\\Lang\\": "typo3/sysext/lang/Classes/",
+                    "TYPO3\\CMS\\Linkvalidator\\": "typo3/sysext/linkvalidator/Classes/",
+                    "TYPO3\\CMS\\Lowlevel\\": "typo3/sysext/lowlevel/Classes/",
+                    "TYPO3\\CMS\\Opendocs\\": "typo3/sysext/opendocs/Classes/",
+                    "TYPO3\\CMS\\Recordlist\\": "typo3/sysext/recordlist/Classes/",
+                    "TYPO3\\CMS\\Recycler\\": "typo3/sysext/recycler/Classes/",
+                    "TYPO3\\CMS\\Reports\\": "typo3/sysext/reports/Classes/",
+                    "TYPO3\\CMS\\Rsaauth\\": "typo3/sysext/rsaauth/Classes/",
+                    "TYPO3\\CMS\\Rtehtmlarea\\": "typo3/sysext/rtehtmlarea/Classes/",
+                    "TYPO3\\CMS\\Saltedpasswords\\": "typo3/sysext/saltedpasswords/Classes/",
+                    "TYPO3\\CMS\\Scheduler\\": "typo3/sysext/scheduler/Classes/",
+                    "TYPO3\\CMS\\Setup\\": "typo3/sysext/setup/Classes/",
+                    "TYPO3\\CMS\\Sv\\": "typo3/sysext/sv/Classes/",
+                    "TYPO3\\CMS\\SysAction\\": "typo3/sysext/sys_action/Classes/",
+                    "TYPO3\\CMS\\SysNote\\": "typo3/sysext/sys_note/Classes/",
+                    "TYPO3\\CMS\\T3editor\\": "typo3/sysext/t3editor/Classes/",
+                    "TYPO3\\CMS\\Taskcenter\\": "typo3/sysext/taskcenter/Classes/",
+                    "TYPO3\\CMS\\Tstemplate\\": "typo3/sysext/tstemplate/Classes/",
+                    "TYPO3\\CMS\\Version\\": "typo3/sysext/version/Classes/",
+                    "TYPO3\\CMS\\Viewpage\\": "typo3/sysext/viewpage/Classes/",
+                    "TYPO3\\CMS\\WizardCrpages\\": "typo3/sysext/wizard_crpages/Classes/",
+                    "TYPO3\\CMS\\WizardSortpages\\": "typo3/sysext/wizard_sortpages/Classes/",
+                    "TYPO3\\CMS\\Workspaces\\": "typo3/sysext/workspaces/Classes/"
+                },
+                "classmap": [
+                    "typo3/sysext/core/Resources/PHP/"
+                ],
+                "files": [
+                    "typo3/sysext/core/Resources/PHP/GlobalDebugFunctions.php"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "vendor/pear/http_request2/",
+                "vendor/pear/net_url2/"
+            ],
             "license": [
                 "GPL-2.0+"
             ],
@@ -636,31 +1346,34 @@
                 }
             ],
             "description": "TYPO3 CMS is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.",
-            "homepage": "http://typo3.org/",
+            "homepage": "https://typo3.org/",
             "keywords": [
                 "Content management system",
                 "cms",
                 "extbase",
                 "typo3"
             ],
-            "time": "2015-09-08 09:01:41"
+            "time": "2015-11-10 13:37:21"
         },
         {
             "name": "typo3/cms-composer-installers",
-            "version": "1.1.4",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/CmsComposerInstallers.git",
-                "reference": "aa2dfd2efd323aed1250d63d6400aa064b740624"
+                "reference": "68dce62bbfed9912583de4a1db16df8feb8f7e2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/CmsComposerInstallers/zipball/aa2dfd2efd323aed1250d63d6400aa064b740624",
-                "reference": "aa2dfd2efd323aed1250d63d6400aa064b740624",
+                "url": "https://api.github.com/repos/TYPO3/CmsComposerInstallers/zipball/68dce62bbfed9912583de4a1db16df8feb8f7e2d",
+                "reference": "68dce62bbfed9912583de4a1db16df8feb8f7e2d",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0.0"
+            },
+            "conflict": {
+                "composer/installers": "*"
             },
             "replace": {
                 "lw/typo3cms-installers": "*",
@@ -673,7 +1386,7 @@
             "extra": {
                 "class": "TYPO3\\CMS\\Composer\\Installer\\Plugin",
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -704,15 +1417,16 @@
                 "installer",
                 "typo3"
             ],
-            "time": "2015-06-23 12:32:24"
+            "time": "2015-11-03 21:19:57"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": null,
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "ecodev/speciality": 20,
-        "ecodev/speciality-distribution": 20
+        "ecodev/speciality-distribution": 20,
+        "mikey179/vfsstream": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
