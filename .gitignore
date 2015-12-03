@@ -4,6 +4,9 @@
 /.idea
 /nbproject
 /vendor
+/build
+/build.xml
+/bin
 
 ###########
 # /htdocs
