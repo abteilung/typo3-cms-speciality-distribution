@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ebc4d9b918504cbf66bfc06d70f2a2a7",
-    "content-hash": "84059f85f6f670b156e103f38350ebce",
+    "hash": "1745722bdec22e126dd5838111faeba3",
+    "content-hash": "26837d5f7a9518113ac67427f60af9cf",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -118,7 +118,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ecodev/speciality.git",
-                "reference": "90cf21e626ec0f7bcc7fdda728f535590758c075"
+                "reference": "35cb1c2204473869918654f008b6ce8b88f37267"
             },
             "require": {
                 "fab/media": "4.*.*",
@@ -139,7 +139,7 @@
             ],
             "description": "Based extension providing a set of configuration and templates for your website. Everyone is special...",
             "homepage": "https://github.com/Ecodev/speciality.git",
-            "time": "2015-12-03 17:37:52"
+            "time": "2015-12-15 14:19:12"
         },
         {
             "name": "ecodev/speciality-distribution",
@@ -237,6 +237,38 @@
                 "generic listing"
             ],
             "time": "2015-12-03 16:21:46"
+        },
+        {
+            "name": "fluidbt/fluidbootstraptheme",
+            "version": "dev-development",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bootstraptheme-for-typo3/fluidbootstraptheme.git",
+                "reference": "911b7ebe44aac772bdb1279d67386d58b3cb86b1"
+            },
+            "require": {
+                "fluidtypo3/fluidcontent": "*",
+                "fluidtypo3/fluidpages": "*",
+                "fluidtypo3/flux": "*",
+                "fluidtypo3/vhs": "*"
+            },
+            "type": "typo3-cms-extension",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "The fluid_bootstrap package from FluidTYPO3",
+            "homepage": "https://github.com/bootstraptheme-for-typo3/fluidbootstraptheme",
+            "keywords": [
+                "Bootstrap",
+                "FluidTYPO3",
+                "TYPO3 CMS",
+                "fluid",
+                "templating"
+            ],
+            "support": {
+                "issues": "https://github.com/bootstraptheme-for-typo3/fluidbootstraptheme/issues"
+            },
+            "time": "2015-11-09 19:54:13"
         },
         {
             "name": "fluidtypo3/fluidcontent",
@@ -1159,16 +1191,16 @@
         },
         {
             "name": "typo3/cms",
-            "version": "7.6.0",
+            "version": "7.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "a2585ba26b9df87ef67fdbb4f53d2f1a891d919f"
+                "reference": "e889c3dc9ae1265ab8570f4bf88002a8c8e7e8cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/a2585ba26b9df87ef67fdbb4f53d2f1a891d919f",
-                "reference": "a2585ba26b9df87ef67fdbb4f53d2f1a891d919f",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/e889c3dc9ae1265ab8570f4bf88002a8c8e7e8cd",
+                "reference": "e889c3dc9ae1265ab8570f4bf88002a8c8e7e8cd",
                 "shasum": ""
             },
             "require": {
@@ -1187,7 +1219,7 @@
                 "symfony/console": "~2.7.0",
                 "symfony/finder": "~2.7.0",
                 "typo3/class-alias-loader": "^1.0",
-                "typo3/cms-composer-installers": "^1.2.2"
+                "typo3/cms-composer-installers": "^1.2.5"
             },
             "replace": {
                 "typo3/cms-about": "self.version",
@@ -1353,7 +1385,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2015-11-10 13:37:21"
+            "time": "2015-12-15 10:53:26"
         },
         {
             "name": "typo3/cms-composer-installers",
@@ -2002,23 +2034,23 @@
         },
         {
             "name": "sebastian/diff",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "2b0112e42c338afa9ad9dfeb94d66f6d84c2f828"
+                "reference": "13edfd8706462032c2f52b4b862974dd46b71c9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/2b0112e42c338afa9ad9dfeb94d66f6d84c2f828",
-                "reference": "2b0112e42c338afa9ad9dfeb94d66f6d84c2f828",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/13edfd8706462032c2f52b4b862974dd46b71c9e",
+                "reference": "13edfd8706462032c2f52b4b862974dd46b71c9e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "~5"
+                "phpunit/phpunit": "~4.8"
             },
             "type": "library",
             "extra": {
@@ -2050,7 +2082,7 @@
             "keywords": [
                 "diff"
             ],
-            "time": "2015-12-06 07:21:36"
+            "time": "2015-12-08 07:14:41"
         },
         {
             "name": "sebastian/environment",
@@ -2362,6 +2394,7 @@
     "stability-flags": {
         "ecodev/speciality": 20,
         "ecodev/speciality-distribution": 20,
+        "fluidbt/fluidbootstraptheme": 20,
         "mikey179/vfsstream": 20
     },
     "prefer-stable": false,
