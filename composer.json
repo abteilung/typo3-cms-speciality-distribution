@@ -11,10 +11,6 @@
 		{
 			"type": "git",
 			"url": "https://github.com/Ecodev/speciality_distribution.git"
-		},
-		{
-			"type": "git",
-			"url": "https://github.com/Ecodev/fluidbootstraptheme.git"
 		}
 	],
 	"name": "ecodev/typo3-cms-speciality-distribution",
@@ -24,7 +20,20 @@
 		"typo3/cms": "7.6.*",
 		"ecodev/speciality": "dev-master",
 		"ecodev/speciality-distribution": "dev-master",
-		"fluidbt/fluidbootstraptheme": "dev-development"
+
+		"fluidtypo3/fluidcontent": "4.*.*",
+		"fluidtypo3/fluidpages": "3.*.*",
+		"fluidtypo3/fluidcontent_core": "1.*.*",
+		"fluidtypo3/flux": "7.*.*",
+		"fluidtypo3/vhs": "2.*.*",
+
+		"typo3-ter/nc-staticfilecache": "*",
+		"typo3-ter/realurl": "*",
+		"typo3-ter/seo-basics": "*",
+
+		"helhum/typo3-console": "1.*.*",
+		"fab/vidi": "2.*.*",
+		"fab/media": "4.*.*"
 	},
 	"require-dev": {
 		"mikey179/vfsStream": "1.4.*@dev",
