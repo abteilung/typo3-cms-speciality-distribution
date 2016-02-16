@@ -85,42 +85,43 @@ Internal steps
 
 These are internal steps that I follow when bootstrapping a new website.
 
-* Edit file `.gitignore` and add all files to the git repository.
+* Deactivate "speciality_distribution"
+* Edit file ``.gitignore`` and add all files to the git repository.
 
 ::
 
 	cd domain.tld
 	nano .gitignore
 
-    Add:
-
-	/htdocs/typo3conf/ext/*
-	!/htdocs/typo3conf/ext/speciality
-
 	Remove:
 
-	LocalConfiguration and AdditionalConfiguration
+	/htdocs/typo3conf/LocalConfiguration.php
+	/htdocs/typo3conf/PackageStates.php
 
-	git add .
+    Add:
 
-* Change password of admin user
-* `DELETE FROM be_users WHERE username = 'editor' OR username = 'powereditor';`
-* Deactivate "speciality_distribution" in EM.
-* `rm -rf htdocs/typo3conf/ext/speciality/.git`
-* Remove "speciality_distribution" and "speciality" from composer.json
-* Remove the DB credientials from LocalConfiguration and add them into ../configuration/Settings.php
-* Configure RealURL in the EM with this path `typo3conf/ext/speciality/Configuration/RealUrl/Configuration.php`
-* Add sys_domain on the root page and test http://domain.tld/sitemap.xml
-* Add at the end of robots.txt: Sitemap: http://www.domain.tld/sitemap.xml
-* `TRUNCATE TABLE sys_news; TRUNCATE TABLE backend_layout;`
-* `DELETE FROM sys_file_storage WHERE uid != 1`;
-* `DELETE FROM sys_file WHERE storage NOT IN (0,1);`
-* `rm -rf htdocs/fileadmin/speciality_distribution htdocs/fileadmin/_temp_`
-* Move require packages of htdocs/typo3conf/ext/speciality/composer.json into composer.json
-* `rm htdocs/typo3conf/ext/speciality/composer.json` (not needed anymore since part of the repository)
-* Add extension https://github.com/Ecodev/speciality_ecodev
+	!/htdocs/typo3conf/ext/speciality
 
-::
+* Extension speciality under Git::
+
+    git add .
+    rm -rf htdocs/typo3conf/ext/speciality/.git
+    rm htdocs/typo3conf/ext/speciality/composer.json
+
+    # Temporary move
+    mv htdocs/typo3conf/ext/speciality htdocs/typo3conf/ext/speciality2
+
+    # Include speciality into the repository
+    git rm htdocs/typo3conf/ext/speciality
+
+    # Move back
+    mv htdocs/typo3conf/ext/speciality2 htdocs/typo3conf/ext/speciality
+
+    # Git finish the work
+    git add .
+    git ci -m "First commit"
+
+* Add extension https://github.com/Ecodev/speciality_ecodev, edit composer.json at the root::
 
         {
                 "type": "git",
@@ -128,8 +129,43 @@ These are internal steps that I follow when bootstrapping a new website.
         }
 
         "require": {
-            "typo3/cms": "7.6.*",
             "ecodev/speciality-ecodev": "dev-master"
         },
 
-* composer update --no-dev
+* Remove "speciality_distribution" and "speciality" from composer.json
+* ``composer update``
+* ``git checkout htdocs/typo3conf/ext/speciality``
+* Activate "speciality_ecodev" in EM.
+* Change password of admin user
+* Run following SQL request::
+
+    DELETE FROM be_users WHERE username = 'editor' OR username = 'powereditor';
+    TRUNCATE TABLE sys_news; TRUNCATE TABLE backend_layout;
+    DELETE FROM sys_file_storage WHERE uid != 1;
+    DELETE FROM sys_file WHERE storage NOT IN (0,1);
+
+* Remove the DB credentials from ``htdocs/typo3conf/AdditionalConfiguration.php`` and add them into ``configuration/Settings.php``
+* Edit htdocs/typo3conf/AdditionalConfiguration.php::
+
+    <?php
+    // Include global configuration.
+    require_once (PATH_site . '../configuration/Settings.php');
+    require_once (PATH_site . 'typo3conf/ext/speciality_ecodev/Configuration/PHP/Typo3ConfVars.php');
+
+    # Frontend Settings
+    $GLOBALS['TYPO3_CONF_VARS']['FE']['pageNotFound_handling'] = '/404/';
+    $GLOBALS['TYPO3_CONF_VARS']['FE']['pageUnavailable_handling'] = '/503/';
+    // Declare Content Rendering for the Frontend
+    $GLOBALS['TYPO3_CONF_VARS']['FE']['contentRenderingTemplates'] = array('fluidcontentcore/Configuration/TypoScript/');
+    $GLOBALS['TYPO3_CONF_VARS']['FE']['activateContentAdapter'] = 0;
+
+
+* In the BE again, configure RealURL in EM ``typo3conf/ext/speciality/Configuration/RealUrl/Configuration.php``
+* In the BE again, add a sys_domain record on the root page and test http://domain.tld/sitemap.xml
+* Add at the end of ``htdocs/robots.txt``::
+
+    Sitemap: http://www.domain.tld/sitemap.xml
+
+* ``rm -rf htdocs/fileadmin/speciality_distribution htdocs/fileadmin/_temp_``
+* In ``typo3conf/LocalConfiguration.php`` under "SYS", add ``'trustedHostsPattern' => '.*\\.domain\\.tld|lan:*',``
+* ``git add . ; git ci --amend`` and a final ``git push``
