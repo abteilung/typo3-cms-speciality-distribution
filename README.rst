@@ -140,7 +140,7 @@ These are internal steps that I follow when bootstrapping a new website.
 * Run following SQL request::
 
     DELETE FROM be_users WHERE username = 'editor' OR username = 'powereditor';
-    TRUNCATE TABLE sys_news; TRUNCATE TABLE backend_layout;
+    TRUNCATE TABLE sys_news; TRUNCATE TABLE backend_layout; TRUNCATE TABLE pages_language_overlay;
     DELETE FROM sys_file_storage WHERE uid != 1;
     DELETE FROM sys_file WHERE storage NOT IN (0,1);
 
