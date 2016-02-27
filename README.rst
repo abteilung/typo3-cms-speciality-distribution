@@ -106,7 +106,7 @@ These are internal steps that I follow when bootstrapping a new website.
 
     git add .
     rm -rf htdocs/typo3conf/ext/speciality/.git
-    rm htdocs/typo3conf/ext/speciality/composer.json
+    rm htdocs/typo3conf/ext/speciality/{composer.json,README.md}
 
     # Temporary move
     mv htdocs/typo3conf/ext/speciality htdocs/typo3conf/ext/speciality2
@@ -169,3 +169,4 @@ These are internal steps that I follow when bootstrapping a new website.
 * ``rm -rf htdocs/fileadmin/speciality_distribution htdocs/fileadmin/_temp_``
 * In ``typo3conf/LocalConfiguration.php`` under "SYS", add ``'trustedHostsPattern' => '.*\\.domain\\.tld|lan:*',``
 * ``git add . ; git ci --amend`` and a final ``git push``
+* check CRON configuration and polish Scheduler tasks
