@@ -27,4 +27,5 @@
 /htdocs/typo3conf/ENABLE_INSTALL_TOOL
 /htdocs/typo3conf/FIRST_INSTALL
 /htdocs/typo3conf/*.log
+/htdocs/typo3conf/l10n/*
 /htdocs/typo3conf/ext/*
