@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "02bcf25188092ae8a90cb58194d15b97",
-    "content-hash": "476a9360edf550be77e789a90a3837ec",
+    "hash": "6b87db7f73a5d855afb0380477ca55c7",
+    "content-hash": "e42cd7a30edb99a7df40673b693d4bc8",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -118,7 +118,11 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ecodev/speciality.git",
-                "reference": "99b4cf03749879ebdd7a75c92a56d9252a5f2333"
+                "reference": "899bd14ed2f5b0cfc8c27019a585d7b1268b268a"
+            },
+            "replace": {
+                "speciality": "self.version",
+                "typo3-ter/speciality": "self.version"
             },
             "type": "typo3-cms-extension",
             "license": [
@@ -126,7 +130,7 @@
             ],
             "description": "Based extension providing a set of configuration and templates for your website. Everyone is special...",
             "homepage": "https://github.com/Ecodev/speciality.git",
-            "time": "2016-02-23 17:18:59"
+            "time": "2016-04-01 18:41:46"
         },
         {
             "name": "ecodev/speciality-distribution",
@@ -134,7 +138,11 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ecodev/speciality_distribution.git",
-                "reference": "9a191c95f7406afbb44c7c3a5862e7ef208d51cc"
+                "reference": "8b88252ae88c504111983182b2e841a377eae8ad"
+            },
+            "replace": {
+                "speciality_distribution": "self.version",
+                "typo3-ter/speciality_distribution": "self.version"
             },
             "type": "typo3-cms-extension",
             "autoload": {
@@ -146,30 +154,28 @@
                 "GPL-2.0+"
             ],
             "description": "Delivers a special website just for you.",
-            "homepage": "https://github.com/Ecodev/speciality_speciality.git",
-            "time": "2016-02-23 17:16:16"
+            "homepage": "https://github.com/Ecodev/speciality_distribution.git",
+            "time": "2016-04-01 18:50:36"
         },
         {
             "name": "fab/media",
-            "version": "4.0.1",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabarea/media.git",
-                "reference": "3e965ea1b9c0265b8af04e23bdf65817246095b5"
+                "reference": "aad2a0964f3ca8ddf9e51985e66224b67d38e48b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabarea/media/zipball/3e965ea1b9c0265b8af04e23bdf65817246095b5",
-                "reference": "3e965ea1b9c0265b8af04e23bdf65817246095b5",
+                "url": "https://api.github.com/repos/fabarea/media/zipball/aad2a0964f3ca8ddf9e51985e66224b67d38e48b",
+                "reference": "aad2a0964f3ca8ddf9e51985e66224b67d38e48b",
                 "shasum": ""
             },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "autoload-case-sensitivity": false,
-                "class-alias-maps": [
-                    "Migrations/Code/ClassAliasMap.php"
-                ]
+            "replace": {
+                "media": "self.version",
+                "typo3-ter/media": "self.version"
             },
+            "type": "typo3-cms-extension",
             "autoload": {
                 "psr-4": {
                     "Fab\\Media\\": "Classes/"
@@ -185,29 +191,62 @@
                 "Media management",
                 "TYPO3 CMS"
             ],
-            "time": "2015-12-03 17:02:12"
+            "time": "2016-03-23 06:52:07"
         },
         {
-            "name": "fab/vidi",
-            "version": "2.0.1",
+            "name": "fab/natural-gallery",
+            "version": "0.9.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fabarea/vidi.git",
-                "reference": "1d303155cf69856c765b679d2cd8a286cf50a364"
+                "url": "https://github.com/Ecodev/natural-gallery-typo3.git",
+                "reference": "cee81ea30ae3edaf6a230deea69f7cdce6af2632"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabarea/vidi/zipball/1d303155cf69856c765b679d2cd8a286cf50a364",
-                "reference": "1d303155cf69856c765b679d2cd8a286cf50a364",
+                "url": "https://api.github.com/repos/Ecodev/natural-gallery-typo3/zipball/cee81ea30ae3edaf6a230deea69f7cdce6af2632",
+                "reference": "cee81ea30ae3edaf6a230deea69f7cdce6af2632",
                 "shasum": ""
             },
             "type": "typo3-cms-extension",
-            "extra": {
-                "autoload-case-sensitivity": false,
-                "class-alias-maps": [
-                    "Migrations/Code/ClassAliasMap.php"
-                ]
+            "autoload": {
+                "psr-4": {
+                    "Fab\\NaturalGallery\\": "Classes/"
+                }
             },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Display images as you scroll and enlarged them in a slideshow.",
+            "homepage": "https://github.com/Ecodev/natural-gallery-typo3",
+            "keywords": [
+                "Photo Gallery",
+                "TYPO3 CMS"
+            ],
+            "support": {
+                "issues": "https://github.com/Ecodev/natural-gallery-typo3/issues",
+                "source": "https://github.com/Ecodev/natural-gallery-typo3/tree/0.9.2"
+            },
+            "time": "2016-03-18 14:21:12"
+        },
+        {
+            "name": "fab/vidi",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabarea/vidi.git",
+                "reference": "4eeb53677f648ed06d375a2c985f9d3d01334a94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabarea/vidi/zipball/4eeb53677f648ed06d375a2c985f9d3d01334a94",
+                "reference": "4eeb53677f648ed06d375a2c985f9d3d01334a94",
+                "shasum": ""
+            },
+            "replace": {
+                "typo3-ter/vidi": "self.version",
+                "vidi": "self.version"
+            },
+            "type": "typo3-cms-extension",
             "autoload": {
                 "psr-4": {
                     "Fab\\Vidi\\": "Classes/"
@@ -223,20 +262,56 @@
                 "TYPO3 CMS",
                 "generic listing"
             ],
-            "time": "2015-12-03 16:21:46"
+            "time": "2016-04-01 14:46:31"
         },
         {
-            "name": "fluidtypo3/fluidcontent",
-            "version": "4.4.0",
+            "name": "fab/vidi-frontend",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/FluidTYPO3/fluidcontent.git",
-                "reference": "5cd232cf98bf7401b2addcdf58ac503aa782ec96"
+                "url": "https://github.com/fabarea/vidi_frontend.git",
+                "reference": "a6fa72adecbc4abc31de919259e23b6ddb7c75de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FluidTYPO3/fluidcontent/zipball/5cd232cf98bf7401b2addcdf58ac503aa782ec96",
-                "reference": "5cd232cf98bf7401b2addcdf58ac503aa782ec96",
+                "url": "https://api.github.com/repos/fabarea/vidi_frontend/zipball/a6fa72adecbc4abc31de919259e23b6ddb7c75de",
+                "reference": "a6fa72adecbc4abc31de919259e23b6ddb7c75de",
+                "shasum": ""
+            },
+            "replace": {
+                "typo3-ter/vidi_frontend": "self.version",
+                "vidi_frontend": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "Fab\\VidiFrontend\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Generic List Component for the Frontend where content can be filtered in an advanced way... Veni, vidi, vici!",
+            "homepage": "https://github.com/fudriot/vidi_frontend",
+            "keywords": [
+                "TYPO3 CMS",
+                "generic listing"
+            ],
+            "time": "2016-04-01 15:36:52"
+        },
+        {
+            "name": "fluidtypo3/fluidcontent",
+            "version": "4.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FluidTYPO3/fluidcontent.git",
+                "reference": "3381d01b7dbb2d0d01f0199824ece827dbd47350"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FluidTYPO3/fluidcontent/zipball/3381d01b7dbb2d0d01f0199824ece827dbd47350",
+                "reference": "3381d01b7dbb2d0d01f0199824ece827dbd47350",
                 "shasum": ""
             },
             "require": {
@@ -271,7 +346,7 @@
                 "flux",
                 "templating"
             ],
-            "time": "2015-11-21 14:11:30"
+            "time": "2016-03-02 13:41:59"
         },
         {
             "name": "fluidtypo3/fluidcontent_core",
@@ -326,16 +401,16 @@
         },
         {
             "name": "fluidtypo3/fluidpages",
-            "version": "3.4.0",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FluidTYPO3/fluidpages.git",
-                "reference": "8528e2f1f9f094b23b40da3353fe7c0f1c2fce3a"
+                "reference": "5cbb73f98efca3ed82a1c3cb161bce175150fec5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FluidTYPO3/fluidpages/zipball/8528e2f1f9f094b23b40da3353fe7c0f1c2fce3a",
-                "reference": "8528e2f1f9f094b23b40da3353fe7c0f1c2fce3a",
+                "url": "https://api.github.com/repos/FluidTYPO3/fluidpages/zipball/5cbb73f98efca3ed82a1c3cb161bce175150fec5",
+                "reference": "5cbb73f98efca3ed82a1c3cb161bce175150fec5",
                 "shasum": ""
             },
             "require": {
@@ -370,7 +445,7 @@
                 "flux",
                 "templating"
             ],
-            "time": "2015-11-21 14:23:14"
+            "time": "2016-03-03 14:28:42"
         },
         {
             "name": "fluidtypo3/flux",
@@ -456,29 +531,32 @@
         },
         {
             "name": "helhum/typo3-console",
-            "version": "1.2.5",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/helhum/typo3_console.git",
-                "reference": "6026db4a9d68dacced2029114c3330bd5e52a18c"
+                "reference": "11812cdef0cfcdd543771517d524e7266b35fdf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/helhum/typo3_console/zipball/6026db4a9d68dacced2029114c3330bd5e52a18c",
-                "reference": "6026db4a9d68dacced2029114c3330bd5e52a18c",
+                "url": "https://api.github.com/repos/helhum/typo3_console/zipball/11812cdef0cfcdd543771517d524e7266b35fdf9",
+                "reference": "11812cdef0cfcdd543771517d524e7266b35fdf9",
                 "shasum": ""
             },
             "require": {
-                "typo3/cms-core": ">=7.4.0,<8.0"
+                "ext-phar": "*",
+                "symfony/console": ">=2.7|<3.1",
+                "symfony/process": ">=2.7|<3.1",
+                "typo3/cms-core": "^7.6|^8.0"
             },
             "replace": {
                 "typo3-ter/typo3-console": "self.version",
                 "typo3_console": "self.version"
             },
             "require-dev": {
-                "mikey179/vfsstream": "1.4.*@dev",
+                "mikey179/vfsstream": "~1.6.0",
                 "namelesscoder/typo3-repository-client": "1.1.x-dev",
-                "phpunit/phpunit": "~4.7.0"
+                "phpunit/phpunit": "~4.8.0"
             },
             "type": "typo3-cms-extension",
             "extra": {
@@ -519,7 +597,7 @@
                 "console",
                 "typo3"
             ],
-            "time": "2015-11-23 21:09:07"
+            "time": "2016-03-23 21:21:39"
         },
         {
             "name": "mso/idna-convert",
@@ -881,16 +959,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.7.9",
+            "version": "v2.7.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "d3fc138b6ed8f8074591821d3416d8f9c04d6ca6"
+                "reference": "6100a40569b2be1b6aba1cc6a92fe6cb71024fc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/d3fc138b6ed8f8074591821d3416d8f9c04d6ca6",
-                "reference": "d3fc138b6ed8f8074591821d3416d8f9c04d6ca6",
+                "url": "https://api.github.com/repos/symfony/console/zipball/6100a40569b2be1b6aba1cc6a92fe6cb71024fc8",
+                "reference": "6100a40569b2be1b6aba1cc6a92fe6cb71024fc8",
                 "shasum": ""
             },
             "require": {
@@ -936,20 +1014,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-01-14 08:26:43"
+            "time": "2016-03-09 16:30:49"
         },
         {
             "name": "symfony/finder",
-            "version": "v2.7.9",
+            "version": "v2.7.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "d20ac81c81a67ab898b0c0afa435f3e9a7d460cf"
+                "reference": "0bacc7c9fc1905cfce20212633013a5b300dce52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/d20ac81c81a67ab898b0c0afa435f3e9a7d460cf",
-                "reference": "d20ac81c81a67ab898b0c0afa435f3e9a7d460cf",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/0bacc7c9fc1905cfce20212633013a5b300dce52",
+                "reference": "0bacc7c9fc1905cfce20212633013a5b300dce52",
                 "shasum": ""
             },
             "require": {
@@ -985,7 +1063,56 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2016-01-14 08:26:43"
+            "time": "2016-03-10 10:49:29"
+        },
+        {
+            "name": "symfony/process",
+            "version": "v3.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "e6f1f98bbd355d209a992bfff45e7edfbd4a0776"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/e6f1f98bbd355d209a992bfff45e7edfbd4a0776",
+                "reference": "e6f1f98bbd355d209a992bfff45e7edfbd4a0776",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-03-30 10:41:14"
         },
         {
             "name": "typo3-ter/nc-staticfilecache",
@@ -1011,7 +1138,6 @@
                 "exclude-from-classmap": [
                     "Tests",
                     "tests",
-                    "Resources",
                     "class.ext_update.php"
                 ]
             },
@@ -1028,16 +1154,16 @@
         },
         {
             "name": "typo3-ter/realurl",
-            "version": "1.13.6",
+            "version": "2.0.10",
             "dist": {
                 "type": "t3x",
-                "url": "https://typo3.org/extensions/repository/download/realurl/1.13.6/t3x/",
+                "url": "https://typo3.org/extensions/repository/download/realurl/2.0.10/t3x/",
                 "reference": null,
                 "shasum": null
             },
             "require": {
-                "php": ">= 5.3.2, <= 5.999.999",
-                "typo3/cms-core": ">= 4.5.40, <= 7.9.999"
+                "php": ">= 5.3.2, <= 7.0.999",
+                "typo3/cms-core": ">= 6.2.0, <= 7.99.999"
             },
             "conflict": {
                 "typo3-ter/cooluri": "*",
@@ -1048,15 +1174,9 @@
             },
             "type": "typo3-cms-extension",
             "autoload": {
-                "classmap": [
-                    ""
-                ],
-                "exclude-from-classmap": [
-                    "Tests",
-                    "tests",
-                    "Resources",
-                    "class.ext_update.php"
-                ]
+                "psr-4": {
+                    "DmitryDulepov\\Realurl\\": "Classes"
+                }
             },
             "authors": [
                 {
@@ -1066,8 +1186,8 @@
                     "username": "dmitry"
                 }
             ],
-            "description": "Creates nice looking URLs for TYPO3 pages: converts http://example.com/index.phpid12345&L2 to http://example.com/path/to/your/page/. Please, ask for free support in TYPO3 mailing lists or contact the maintainer for paid support.",
-            "time": "2016-01-29 12:02:55"
+            "description": "Makes TYPO3 URLs search engine friendly. Donations are welcome to dmitry.dulepov@gmail.com. They help to support the extension!",
+            "time": "2016-03-18 11:17:45"
         },
         {
             "name": "typo3-ter/seo-basics",
@@ -1169,16 +1289,16 @@
         },
         {
             "name": "typo3/cms",
-            "version": "7.6.3",
+            "version": "7.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "654c6751a04ef60c5a3f7a95ac0b11cd8e06a742"
+                "reference": "bd0c7f6ca9cb3093bd647e85035e9f36bf1e9e86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/654c6751a04ef60c5a3f7a95ac0b11cd8e06a742",
-                "reference": "654c6751a04ef60c5a3f7a95ac0b11cd8e06a742",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/bd0c7f6ca9cb3093bd647e85035e9f36bf1e9e86",
+                "reference": "bd0c7f6ca9cb3093bd647e85035e9f36bf1e9e86",
                 "shasum": ""
             },
             "require": {
@@ -1363,20 +1483,20 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2016-02-16 11:08:30"
+            "time": "2016-02-23 11:00:40"
         },
         {
             "name": "typo3/cms-composer-installers",
-            "version": "1.2.5",
+            "version": "1.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/CmsComposerInstallers.git",
-                "reference": "68dce62bbfed9912583de4a1db16df8feb8f7e2d"
+                "reference": "501fc9a55f357b5f3b2e81cfedba26f7bf4b7ebb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/CmsComposerInstallers/zipball/68dce62bbfed9912583de4a1db16df8feb8f7e2d",
-                "reference": "68dce62bbfed9912583de4a1db16df8feb8f7e2d",
+                "url": "https://api.github.com/repos/TYPO3/CmsComposerInstallers/zipball/501fc9a55f357b5f3b2e81cfedba26f7bf4b7ebb",
+                "reference": "501fc9a55f357b5f3b2e81cfedba26f7bf4b7ebb",
                 "shasum": ""
             },
             "require": {
@@ -1427,7 +1547,7 @@
                 "installer",
                 "typo3"
             ],
-            "time": "2015-11-03 21:19:57"
+            "time": "2016-03-23 11:08:19"
         }
     ],
     "packages-dev": [
@@ -2066,16 +2186,16 @@
         },
         {
             "name": "sebastian/environment",
-            "version": "1.3.3",
+            "version": "1.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "6e7133793a8e5a5714a551a8324337374be209df"
+                "reference": "dc7a29032cf72b54f36dac15a1ca5b3a1b6029bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/6e7133793a8e5a5714a551a8324337374be209df",
-                "reference": "6e7133793a8e5a5714a551a8324337374be209df",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/dc7a29032cf72b54f36dac15a1ca5b3a1b6029bf",
+                "reference": "dc7a29032cf72b54f36dac15a1ca5b3a1b6029bf",
                 "shasum": ""
             },
             "require": {
@@ -2112,7 +2232,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2015-12-02 08:37:27"
+            "time": "2016-02-26 18:40:46"
         },
         {
             "name": "sebastian/exporter",
@@ -2321,16 +2441,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.0.2",
+            "version": "v3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "3cf0709d7fe936e97bee9e954382e449003f1d9a"
+                "reference": "0047c8366744a16de7516622c5b7355336afae96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/3cf0709d7fe936e97bee9e954382e449003f1d9a",
-                "reference": "3cf0709d7fe936e97bee9e954382e449003f1d9a",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/0047c8366744a16de7516622c5b7355336afae96",
+                "reference": "0047c8366744a16de7516622c5b7355336afae96",
                 "shasum": ""
             },
             "require": {
@@ -2366,7 +2486,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-02-02 13:44:19"
+            "time": "2016-03-04 07:55:57"
         }
     ],
     "aliases": [],

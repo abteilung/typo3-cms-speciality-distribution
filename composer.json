@@ -2,7 +2,7 @@
 	"repositories": [
 		{
 			"type": "composer",
-			"url": "http://composer.typo3.org/"
+			"url": "https://composer.typo3.org/"
 		},
 		{
 			"type": "git",
@@ -27,12 +27,14 @@
 		"fluidtypo3/flux": "7.*.*",
 		"fluidtypo3/vhs": "2.*.*",
 
-		"typo3-ter/nc-staticfilecache": "*",
+		"typo3-ter/nc-staticfilecache": "3.5.*",
 		"typo3-ter/realurl": "*",
 		"typo3-ter/seo-basics": "*",
 
 		"helhum/typo3-console": "1.*.*",
 		"fab/vidi": "2.*.*",
+		"fab/vidi-frontend": "1.*.*",
+		"fab/natural-gallery": "0.9.*",
 		"fab/media": "4.*.*"
 	},
 	"require-dev": {
@@ -80,5 +82,15 @@
 			"cms-package-dir": "{$vendor-dir}/typo3/cms",
 			"web-dir": "htdocs"
 		}
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/LinkCreator.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins",
+			"cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/ImageEditor.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins"
+		],
+		"post-update-cmd": [
+			"cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/LinkCreator.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins",
+			"cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/ImageEditor.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins"
+		]
 	}
 }
