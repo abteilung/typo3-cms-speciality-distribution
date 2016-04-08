@@ -140,9 +140,17 @@ These are internal steps that I follow when bootstrapping a new website.
 * Run following SQL request::
 
     DELETE FROM be_users WHERE username = 'editor' OR username = 'powereditor';
-    TRUNCATE TABLE sys_news; TRUNCATE TABLE backend_layout; TRUNCATE TABLE pages_language_overlay;
+    TRUNCATE TABLE sys_news;
+    TRUNCATE TABLE backend_layout;
+    TRUNCATE TABLE pages_language_overlay;
+    TRUNCATE TABLE sys_category;
+    TRUNCATE TABLE sys_category_record_mm;
+    TRUNCATE TABLE fe_groups;
+    TRUNCATE TABLE fe_users;
+    TRUNCATE TABLE sys_file;
+    TRUNCATE TABLE sys_file_metadata;
+    TRUNCATE TABLE sys_file_reference;
     DELETE FROM sys_file_storage WHERE uid != 1;
-    DELETE FROM sys_file WHERE storage NOT IN (0,1);
 
 * Remove the DB credentials from ``htdocs/typo3conf/LocalConfiguration.php`` and add them into ``configuration/Settings.php``
 * Edit ``htdocs/typo3conf/AdditionalConfiguration.php``::
@@ -167,6 +175,8 @@ These are internal steps that I follow when bootstrapping a new website.
     Sitemap: http://www.domain.tld/sitemap.xml
 
 * ``rm -rf htdocs/fileadmin/speciality_distribution htdocs/fileadmin/_temp_``
-* In ``typo3conf/LocalConfiguration.php`` under "SYS", add ``'trustedHostsPattern' => '.*\\.domain\\.tld|lan:*',``
+* ``nano htdocs/typo3conf/LocalConfiguration.php``
+    * under "SYS", add ``'trustedHostsPattern' => '.*\\.domain\\.tld|lan:*',``
+    * update key ``sitename``
 * ``git add . ; git ci --amend`` and a final ``git push``
 * check CRON configuration and polish Scheduler tasks
