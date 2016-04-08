@@ -144,8 +144,8 @@ These are internal steps that I follow when bootstrapping a new website.
     DELETE FROM sys_file_storage WHERE uid != 1;
     DELETE FROM sys_file WHERE storage NOT IN (0,1);
 
-* Remove the DB credentials from ``htdocs/typo3conf/AdditionalConfiguration.php`` and add them into ``configuration/Settings.php``
-* Edit htdocs/typo3conf/AdditionalConfiguration.php::
+* Remove the DB credentials from ``htdocs/typo3conf/LocalConfiguration.php`` and add them into ``configuration/Settings.php``
+* Edit ``htdocs/typo3conf/AdditionalConfiguration.php``::
 
     <?php
     // Include global configuration.
