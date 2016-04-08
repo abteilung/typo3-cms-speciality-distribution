@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6b87db7f73a5d855afb0380477ca55c7",
-    "content-hash": "e42cd7a30edb99a7df40673b693d4bc8",
+    "hash": "02a77eaca43c303dad6ad8c231e5308e",
+    "content-hash": "be92cd59357f0899b4b5126b86b343cc",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -138,7 +138,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ecodev/speciality_distribution.git",
-                "reference": "8b88252ae88c504111983182b2e841a377eae8ad"
+                "reference": "6eafb8005a469454c1f955614293106210f2f3f9"
             },
             "replace": {
                 "speciality_distribution": "self.version",
@@ -155,7 +155,7 @@
             ],
             "description": "Delivers a special website just for you.",
             "homepage": "https://github.com/Ecodev/speciality_distribution.git",
-            "time": "2016-04-01 18:50:36"
+            "time": "2016-04-08 07:44:23"
         },
         {
             "name": "fab/media",
@@ -1116,14 +1116,15 @@
         },
         {
             "name": "typo3-ter/nc-staticfilecache",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "dist": {
                 "type": "t3x",
-                "url": "https://typo3.org/extensions/repository/download/nc_staticfilecache/3.5.0/t3x/",
+                "url": "https://typo3.org/extensions/repository/download/nc_staticfilecache/3.6.0/t3x/",
                 "reference": null,
                 "shasum": null
             },
             "require": {
+                "php": ">= 5.5.0",
                 "typo3/cms-core": ">= 6.2.0, <= 7.99.99"
             },
             "replace": {
@@ -1132,14 +1133,9 @@
             },
             "type": "typo3-cms-extension",
             "autoload": {
-                "classmap": [
-                    ""
-                ],
-                "exclude-from-classmap": [
-                    "Tests",
-                    "tests",
-                    "class.ext_update.php"
-                ]
+                "psr-4": {
+                    "SFC\\NcStaticfilecache\\": "Classes"
+                }
             },
             "authors": [
                 {
@@ -1150,20 +1146,20 @@
                 }
             ],
             "description": "Transparent static file cache solution using mod_rewrite and mod_expires. Increase response times for static pages by a factor of 230!!",
-            "time": "2015-12-28 15:57:45"
+            "time": "2016-03-23 16:58:05"
         },
         {
             "name": "typo3-ter/realurl",
-            "version": "2.0.10",
+            "version": "2.0.11",
             "dist": {
                 "type": "t3x",
-                "url": "https://typo3.org/extensions/repository/download/realurl/2.0.10/t3x/",
+                "url": "https://typo3.org/extensions/repository/download/realurl/2.0.11/t3x/",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "php": ">= 5.3.2, <= 7.0.999",
-                "typo3/cms-core": ">= 6.2.0, <= 7.99.999"
+                "typo3/cms-core": ">= 6.2.0, <= 8.0.999"
             },
             "conflict": {
                 "typo3-ter/cooluri": "*",
@@ -1187,7 +1183,7 @@
                 }
             ],
             "description": "Makes TYPO3 URLs search engine friendly. Donations are welcome to dmitry.dulepov@gmail.com. They help to support the extension!",
-            "time": "2016-03-18 11:17:45"
+            "time": "2016-04-03 16:27:24"
         },
         {
             "name": "typo3-ter/seo-basics",
@@ -1487,23 +1483,23 @@
         },
         {
             "name": "typo3/cms-composer-installers",
-            "version": "1.2.6",
+            "version": "1.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/CmsComposerInstallers.git",
-                "reference": "501fc9a55f357b5f3b2e81cfedba26f7bf4b7ebb"
+                "reference": "dfc242a9153a318a6f00058203a454e33e0f8d88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/CmsComposerInstallers/zipball/501fc9a55f357b5f3b2e81cfedba26f7bf4b7ebb",
-                "reference": "501fc9a55f357b5f3b2e81cfedba26f7bf4b7ebb",
+                "url": "https://api.github.com/repos/TYPO3/CmsComposerInstallers/zipball/dfc242a9153a318a6f00058203a454e33e0f8d88",
+                "reference": "dfc242a9153a318a6f00058203a454e33e0f8d88",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0.0"
             },
             "conflict": {
-                "composer/installers": "*"
+                "composer/installers": "<1.0.24,>1.0.24"
             },
             "replace": {
                 "lw/typo3cms-installers": "*",
@@ -1547,7 +1543,7 @@
                 "installer",
                 "typo3"
             ],
-            "time": "2016-03-23 11:08:19"
+            "time": "2016-04-07 09:02:38"
         }
     ],
     "packages-dev": [

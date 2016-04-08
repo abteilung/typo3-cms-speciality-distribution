@@ -27,7 +27,7 @@
 		"fluidtypo3/flux": "7.*.*",
 		"fluidtypo3/vhs": "2.*.*",
 
-		"typo3-ter/nc-staticfilecache": "3.5.*",
+		"typo3-ter/nc-staticfilecache": "*",
 		"typo3-ter/realurl": "*",
 		"typo3-ter/seo-basics": "*",
 
