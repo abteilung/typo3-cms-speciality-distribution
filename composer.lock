@@ -138,7 +138,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ecodev/speciality_distribution.git",
-                "reference": "6eafb8005a469454c1f955614293106210f2f3f9"
+                "reference": "2c4fc298e663d1e37646801fb2dd2c6c163f1309"
             },
             "replace": {
                 "speciality_distribution": "self.version",
@@ -155,7 +155,7 @@
             ],
             "description": "Delivers a special website just for you.",
             "homepage": "https://github.com/Ecodev/speciality_distribution.git",
-            "time": "2016-04-08 07:44:23"
+            "time": "2016-04-08 10:40:44"
         },
         {
             "name": "fab/media",
