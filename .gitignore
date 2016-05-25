@@ -15,7 +15,6 @@
 /htdocs/typo3
 /htdocs/uploads/*
 /htdocs/index.php
-/htdocs/Packages/*
 /htdocs/fileadmin/*
 /htdocs/typo3temp/*
 
