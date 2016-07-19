@@ -53,7 +53,7 @@ Once done, here are the usually steps I do on my local or on the remote server v
 
 	# Install the extension containing the distribution
 	-> Open the Extension Manager
-	-> Firstly, deactivate EXT:css_styled_content, EXT:fluid_styled_content, EXT:context_help
+	-> Firstly, deactivate EXT:fluid_styled_content, EXT:context_help, EXT:func, ...
 	-> Search for extension "speciality_distribution" and install it. It can take a while!
 	-> At the end of the installation, reload the whole Backend and :)
 
