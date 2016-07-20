@@ -538,12 +538,12 @@
             "version": "1.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/helhum/typo3_console.git",
+                "url": "https://github.com/TYPO3-Console/typo3_console.git",
                 "reference": "11812cdef0cfcdd543771517d524e7266b35fdf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/helhum/typo3_console/zipball/11812cdef0cfcdd543771517d524e7266b35fdf9",
+                "url": "https://api.github.com/repos/TYPO3-Console/typo3_console/zipball/11812cdef0cfcdd543771517d524e7266b35fdf9",
                 "reference": "11812cdef0cfcdd543771517d524e7266b35fdf9",
                 "shasum": ""
             },
@@ -1289,16 +1289,16 @@
         },
         {
             "name": "typo3/cms",
-            "version": "7.6.9",
+            "version": "7.6.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "ecc552537efb1bfe184c7e1d8b1e79facf0a2c20"
+                "reference": "540f30a1072c77ae377198a337924b2b1b338e9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/ecc552537efb1bfe184c7e1d8b1e79facf0a2c20",
-                "reference": "ecc552537efb1bfe184c7e1d8b1e79facf0a2c20",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/540f30a1072c77ae377198a337924b2b1b338e9f",
+                "reference": "540f30a1072c77ae377198a337924b2b1b338e9f",
                 "shasum": ""
             },
             "require": {
@@ -1318,7 +1318,7 @@
                 "symfony/console": "~2.7.0",
                 "symfony/finder": "~2.7.0",
                 "typo3/class-alias-loader": "^1.0",
-                "typo3/cms-composer-installers": "^1.2.5"
+                "typo3/cms-composer-installers": "^1.2.8"
             },
             "replace": {
                 "typo3/cms-about": "self.version",
@@ -1394,7 +1394,7 @@
                     "always-add-alias-loader": true
                 },
                 "branch-alias": {
-                    "dev-master": "7.x-dev"
+                    "dev-TYPO3_7-6": "7.x-dev"
                 }
             },
             "autoload": {
@@ -1467,14 +1467,14 @@
             ],
             "authors": [
                 {
-                    "name": "TYPO3 CMS Core Team",
-                    "homepage": "http://forge.typo3.org/projects/typo3cms-core",
-                    "role": "Developer"
-                },
-                {
                     "name": "The TYPO3 Community",
                     "homepage": "https://typo3.org/community/",
                     "role": "Contributor"
+                },
+                {
+                    "name": "TYPO3 CMS Core Team",
+                    "homepage": "https://forge.typo3.org/projects/typo3cms-core",
+                    "role": "Developer"
                 }
             ],
             "description": "TYPO3 CMS is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.",
@@ -1485,20 +1485,20 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2016-05-24 10:02:34"
+            "time": "2016-07-19 10:37:20"
         },
         {
             "name": "typo3/cms-composer-installers",
-            "version": "1.2.8",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/CmsComposerInstallers.git",
-                "reference": "fbd6f65a1a6fa155f59fd3a17577663633733c62"
+                "reference": "cb25a053cdba0fcc43a9f56f5e086f77eed6b916"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/CmsComposerInstallers/zipball/fbd6f65a1a6fa155f59fd3a17577663633733c62",
-                "reference": "fbd6f65a1a6fa155f59fd3a17577663633733c62",
+                "url": "https://api.github.com/repos/TYPO3/CmsComposerInstallers/zipball/cb25a053cdba0fcc43a9f56f5e086f77eed6b916",
+                "reference": "cb25a053cdba0fcc43a9f56f5e086f77eed6b916",
                 "shasum": ""
             },
             "require": {
@@ -1518,12 +1518,12 @@
             "extra": {
                 "class": "TYPO3\\CMS\\Composer\\Installer\\Plugin",
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "": "Classes/"
+                "psr-4": {
+                    "TYPO3\\CMS\\Composer\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1538,10 +1538,14 @@
                 {
                     "name": "Lars Peipmann",
                     "email": "lars@peipmann.de"
+                },
+                {
+                    "name": "Helmut Hummel",
+                    "email": "info@helhum.io"
                 }
             ],
             "description": "TYPO3 CMS Installers",
-            "homepage": "http://forge.typo3.org/projects/team-composer",
+            "homepage": "https://github.com/TYPO3/CmsComposerInstallers",
             "keywords": [
                 "cms",
                 "core",
@@ -1549,7 +1553,7 @@
                 "installer",
                 "typo3"
             ],
-            "time": "2016-06-13 13:39:26"
+            "time": "2016-07-05 09:38:42"
         }
     ],
     "packages-dev": [
