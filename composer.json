@@ -69,10 +69,7 @@
 			"TYPO3\\CMS\\Scheduler\\Tests\\": "htdocs/typo3/sysext/scheduler/Tests/",
 			"TYPO3\\CMS\\Sv\\Tests\\": "htdocs/typo3/sysext/sv/Tests/",
 			"TYPO3\\CMS\\Workspaces\\Tests\\": "htdocs/typo3/sysext/workspaces/Tests/"
-		},
-		"classmap": [
-			"htdocs/typo3/sysext/extbase/Tests/Unit/Object/Container/Fixtures/"
-		]
+		}
 	},
 	"config": {
 		"bin-dir": "bin"
