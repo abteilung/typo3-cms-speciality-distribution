@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7a7264d370f994d43c727d31952b0b8c",
-    "content-hash": "be92cd59357f0899b4b5126b86b343cc",
+    "hash": "d5a88cc59083521fe8510a7b9567591c",
+    "content-hash": "49d52a4ef547835f5c1ecfb3063304e6",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -159,16 +159,16 @@
         },
         {
             "name": "fab/media",
-            "version": "4.0.4",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabarea/media.git",
-                "reference": "7f588d22030f88a3d1096c0c650c738da5fe4727"
+                "reference": "f637093037749fb68c19cd04086094d9c1d36864"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabarea/media/zipball/7f588d22030f88a3d1096c0c650c738da5fe4727",
-                "reference": "7f588d22030f88a3d1096c0c650c738da5fe4727",
+                "url": "https://api.github.com/repos/fabarea/media/zipball/f637093037749fb68c19cd04086094d9c1d36864",
+                "reference": "f637093037749fb68c19cd04086094d9c1d36864",
                 "shasum": ""
             },
             "replace": {
@@ -191,20 +191,20 @@
                 "Media management",
                 "TYPO3 CMS"
             ],
-            "time": "2016-06-13 18:55:51"
+            "time": "2016-07-25 17:45:20"
         },
         {
             "name": "fab/natural-gallery",
-            "version": "0.9.3",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ecodev/natural-gallery-typo3.git",
-                "reference": "07b403fd45fe42dc30db29b6b5d90036e401b803"
+                "reference": "04bbfcec55f6fc3d8f837e12770d8ad30ed728f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ecodev/natural-gallery-typo3/zipball/07b403fd45fe42dc30db29b6b5d90036e401b803",
-                "reference": "07b403fd45fe42dc30db29b6b5d90036e401b803",
+                "url": "https://api.github.com/repos/Ecodev/natural-gallery-typo3/zipball/04bbfcec55f6fc3d8f837e12770d8ad30ed728f4",
+                "reference": "04bbfcec55f6fc3d8f837e12770d8ad30ed728f4",
                 "shasum": ""
             },
             "replace": {
@@ -228,22 +228,22 @@
             ],
             "support": {
                 "issues": "https://github.com/Ecodev/natural-gallery-typo3/issues",
-                "source": "https://github.com/Ecodev/natural-gallery-typo3/tree/0.9.3"
+                "source": "https://github.com/Ecodev/natural-gallery-typo3/tree/1.0.2"
             },
-            "time": "2016-04-11 15:52:44"
+            "time": "2016-07-28 14:57:08"
         },
         {
             "name": "fab/vidi",
-            "version": "2.1.1",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabarea/vidi.git",
-                "reference": "8c0db3938076187f7a841699bd092a81bb21ebc1"
+                "reference": "65620de829984d2304bb600f3110fb3e6423028b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabarea/vidi/zipball/8c0db3938076187f7a841699bd092a81bb21ebc1",
-                "reference": "8c0db3938076187f7a841699bd092a81bb21ebc1",
+                "url": "https://api.github.com/repos/fabarea/vidi/zipball/65620de829984d2304bb600f3110fb3e6423028b",
+                "reference": "65620de829984d2304bb600f3110fb3e6423028b",
                 "shasum": ""
             },
             "replace": {
@@ -266,20 +266,20 @@
                 "TYPO3 CMS",
                 "generic listing"
             ],
-            "time": "2016-07-13 09:55:05"
+            "time": "2016-07-25 17:40:50"
         },
         {
             "name": "fab/vidi-frontend",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabarea/vidi_frontend.git",
-                "reference": "a6fa72adecbc4abc31de919259e23b6ddb7c75de"
+                "reference": "897b08e11fe843681b4ee10a322a6f5108c2e3c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabarea/vidi_frontend/zipball/a6fa72adecbc4abc31de919259e23b6ddb7c75de",
-                "reference": "a6fa72adecbc4abc31de919259e23b6ddb7c75de",
+                "url": "https://api.github.com/repos/fabarea/vidi_frontend/zipball/897b08e11fe843681b4ee10a322a6f5108c2e3c4",
+                "reference": "897b08e11fe843681b4ee10a322a6f5108c2e3c4",
                 "shasum": ""
             },
             "replace": {
@@ -296,13 +296,13 @@
             "license": [
                 "GPL-2.0+"
             ],
-            "description": "Generic List Component for the Frontend where content can be filtered in an advanced way... Veni, vidi, vici!",
+            "description": "Generic List Component for the Frontend where content can be filtered in an advanced way... Veni, vidi, vici! - demo https://speciality.ecodev.ch/content-elements/dynamic-list-files/",
             "homepage": "https://github.com/fudriot/vidi_frontend",
             "keywords": [
                 "TYPO3 CMS",
                 "generic listing"
             ],
-            "time": "2016-04-01 15:36:52"
+            "time": "2016-07-25 17:53:04"
         },
         {
             "name": "fluidtypo3/fluidcontent",
