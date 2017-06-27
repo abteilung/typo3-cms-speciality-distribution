@@ -71,9 +71,6 @@
 			"TYPO3\\CMS\\Workspaces\\Tests\\": "htdocs/typo3/sysext/workspaces/Tests/"
 		}
 	},
-	"config": {
-		"bin-dir": "bin"
-	},
 	"extra": {
 		"typo3/cms": {
 			"cms-package-dir": "{$vendor-dir}/typo3/cms",
