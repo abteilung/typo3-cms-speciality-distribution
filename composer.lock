@@ -537,12 +537,12 @@
             "version": "1.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/TYPO3-Console/typo3_console.git",
+                "url": "https://github.com/TYPO3-Console/TYPO3-Console.git",
                 "reference": "11812cdef0cfcdd543771517d524e7266b35fdf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-Console/typo3_console/zipball/11812cdef0cfcdd543771517d524e7266b35fdf9",
+                "url": "https://api.github.com/repos/TYPO3-Console/TYPO3-Console/zipball/11812cdef0cfcdd543771517d524e7266b35fdf9",
                 "reference": "11812cdef0cfcdd543771517d524e7266b35fdf9",
                 "shasum": ""
             },
@@ -980,7 +980,7 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.8.24",
+            "version": "v2.8.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
@@ -1098,7 +1098,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.8.24",
+            "version": "v2.8.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -1427,16 +1427,16 @@
         },
         {
             "name": "typo3/cms",
-            "version": "v7.6.20",
+            "version": "7.6.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "ecb6538c2380f46c03b914eea48b6d5da9ab1f5d"
+                "reference": "a32a598fd6c4c0e671e28d83aa94df095596c333"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/ecb6538c2380f46c03b914eea48b6d5da9ab1f5d",
-                "reference": "ecb6538c2380f46c03b914eea48b6d5da9ab1f5d",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/a32a598fd6c4c0e671e28d83aa94df095596c333",
+                "reference": "a32a598fd6c4c0e671e28d83aa94df095596c333",
                 "shasum": ""
             },
             "require": {
@@ -1458,6 +1458,10 @@
                 "typo3/cms-composer-installers": "^1.2.8"
             },
             "replace": {
+                "typo3-ter/adodb": "*",
+                "typo3-ter/dbal": "*",
+                "typo3-ter/func": "*",
+                "typo3-ter/rtehtmlarea": "*",
                 "typo3/cms-about": "self.version",
                 "typo3/cms-aboutmodules": "self.version",
                 "typo3/cms-adodb": "self.version",
@@ -1622,7 +1626,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2017-07-04T06:37:41+00:00"
+            "time": "2017-07-25T16:53:48+00:00"
         },
         {
             "name": "typo3/cms-composer-installers",
