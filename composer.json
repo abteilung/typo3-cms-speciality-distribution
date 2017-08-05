@@ -5,20 +5,20 @@
     },
     {
       "type": "git",
-      "url": "https://github.com/abteilung/speciality.git"
+      "url": "git@github.com:abteilung/speciality.git"
     },
     {
       "type": "git",
-      "url": "https://github.com/abteilung/speciality_distribution.git"
+      "url": "git@github.com:abteilung/speciality_distribution.git"
     }
   ],
-  "name": "ecodev/typo3-cms-speciality-distribution",
+  "name": "abteilung/typo3-cms-speciality-distribution",
   "description": "TYPO3 CMS Speciality Distribution",
   "license": "GPL-2.0+",
   "require": {
     "typo3/cms": "8.7.*",
-    "ecodev/speciality": "dev-master",
-    "ecodev/speciality-distribution": "dev-master",
+    "abteilung/speciality": "dev-master",
+    "abteilung/speciality-distribution": "dev-master",
 
     "fluidtypo3/fluidcontent": "*",
     "fluidtypo3/fluidpages": "*",
@@ -74,12 +74,8 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/LinkCreator.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins",
-      "cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/ImageEditor.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins"
     ],
     "post-update-cmd": [
-      "cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/LinkCreator.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins",
-      "cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/ImageEditor.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins"
     ]
   }
 }
