@@ -1,90 +1,85 @@
 {
-	"repositories": [
-		{
-			"type": "composer",
-			"url": "https://composer.typo3.org/"
-		},
-		{
-			"type": "git",
-			"url": "https://github.com/Ecodev/speciality.git"
-		},
-		{
-			"type": "git",
-			"url": "https://github.com/Ecodev/speciality_distribution.git"
-		}
-	],
-	"name": "ecodev/typo3-cms-speciality-distribution",
-	"description": "TYPO3 CMS Speciality Distribution",
-	"license": "GPL-2.0+",
-	"require": {
-		"typo3/cms": "7.6.*",
-		"ecodev/speciality": "dev-master",
-		"ecodev/speciality-distribution": "dev-master",
+  "repositories": [{
+      "type": "composer",
+      "url": "https://composer.typo3.org/"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/abteilung/speciality.git"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/abteilung/speciality_distribution.git"
+    }
+  ],
+  "name": "ecodev/typo3-cms-speciality-distribution",
+  "description": "TYPO3 CMS Speciality Distribution",
+  "license": "GPL-2.0+",
+  "require": {
+    "typo3/cms": "8.7.*",
+    "ecodev/speciality": "dev-master",
+    "ecodev/speciality-distribution": "dev-master",
 
-		"fluidtypo3/fluidcontent": "4.*.*",
-		"fluidtypo3/fluidpages": "3.*.*",
-		"fluidtypo3/fluidcontent_core": "1.*.*",
-		"fluidtypo3/flux": "7.*.*",
-		"fluidtypo3/vhs": "2.*.*",
+    "fluidtypo3/fluidcontent": "*",
+    "fluidtypo3/fluidpages": "*",
+    "fluidtypo3/flux": "*",
+    "fluidtypo3/vhs": "*",
 
-		"typo3-ter/nc-staticfilecache": "*",
-		"typo3-ter/realurl": "2.0.15",
-		"typo3-ter/seo-basics": "*",
+    "typo3-ter/realurl": "*",
+    "typo3-ter/mindshape-seo": "^1.1",
 
-		"helhum/typo3-console": "1.*.*",
-		"fab/vidi": "2.*.*",
-		"fab/vidi-frontend": "1.*.*",
-		"fab/natural-gallery": "1.*.*",
-		"fab/media": "4.*.*"
-	},
-	"require-dev": {
-		"mikey179/vfsStream": "1.4.*@dev",
-		"phpunit/phpunit": "~4.7.0"
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"TYPO3\\CMS\\Backend\\Tests\\": "htdocs/typo3/sysext/backend/Tests/",
-			"TYPO3\\CMS\\Belog\\Tests\\": "htdocs/typo3/sysext/belog/Tests/",
-			"TYPO3\\CMS\\Beuser\\Tests\\": "htdocs/typo3/sysext/beuser/Tests/",
-			"TYPO3\\CMS\\Core\\Tests\\": "htdocs/typo3/sysext/core/Tests/",
-			"TYPO3\\CMS\\Dbal\\Tests\\": "htdocs/typo3/sysext/dbal/Tests/",
-			"TYPO3\\CMS\\Documentation\\Tests\\": "htdocs/typo3/sysext/documentation/Tests/",
-			"TYPO3\\CMS\\Extbase\\Tests\\": "htdocs/typo3/sysext/extbase/Tests/",
-			"TYPO3\\CMS\\Extensionmanager\\Tests\\": "htdocs/typo3/sysext/extensionmanager/Tests/",
-			"TYPO3\\CMS\\Felogin\\Tests\\": "htdocs/typo3/sysext/felogin/Tests/",
-			"TYPO3\\CMS\\Fluid\\Tests\\": "htdocs/typo3/sysext/fluid/Tests/",
-			"TYPO3\\CMS\\Form\\Tests\\": "htdocs/typo3/sysext/form/Tests/",
-			"TYPO3\\CMS\\Frontend\\Tests\\": "htdocs/typo3/sysext/frontend/Tests/",
-			"TYPO3\\CMS\\Impexp\\Tests\\": "htdocs/typo3/sysext/impexp/Tests/",
-			"TYPO3\\CMS\\IndexedSearch\\Tests\\": "htdocs/typo3/sysext/indexed_search/Tests/",
-			"TYPO3\\CMS\\Install\\Tests\\": "htdocs/typo3/sysext/install/Tests/",
-			"TYPO3\\CMS\\Lang\\Tests\\": "htdocs/typo3/sysext/lang/Tests/",
-			"TYPO3\\CMS\\Lowlevel\\Tests\\": "htdocs/typo3/sysext/lowlevel/Tests/",
-			"TYPO3\\CMS\\Mediace\\": "htdocs/typo3/sysext/mediace/Classes/",
-			"TYPO3\\CMS\\Mediace\\Tests\\": "htdocs/typo3/sysext/mediace/Tests/",
-			"TYPO3\\CMS\\Recordlist\\Tests\\": "htdocs/typo3/sysext/recordlist/Tests/",
-			"TYPO3\\CMS\\Reports\\Tests\\": "htdocs/typo3/sysext/reports/Tests/",
-			"TYPO3\\CMS\\Rsaauth\\Tests\\": "htdocs/typo3/sysext/rsaauth/Tests/",
-			"TYPO3\\CMS\\Saltedpasswords\\Tests\\": "htdocs/typo3/sysext/saltedpasswords/Tests/",
-			"TYPO3\\CMS\\Scheduler\\Tests\\": "htdocs/typo3/sysext/scheduler/Tests/",
-			"TYPO3\\CMS\\Sv\\Tests\\": "htdocs/typo3/sysext/sv/Tests/",
-			"TYPO3\\CMS\\Workspaces\\Tests\\": "htdocs/typo3/sysext/workspaces/Tests/"
-		}
-	},
-	"extra": {
-		"typo3/cms": {
-			"cms-package-dir": "{$vendor-dir}/typo3/cms",
-			"web-dir": "htdocs"
-		}
-	},
-	"scripts": {
-		"post-install-cmd": [
-			"cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/LinkCreator.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins",
-			"cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/ImageEditor.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins"
-		],
-		"post-update-cmd": [
-			"cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/LinkCreator.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins",
-			"cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/ImageEditor.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins"
-		]
-	}
+    "fab/vidi": "*",
+    "fab/vidi-frontend": "*",
+    "fab/media": "*"
+  },
+  "require-dev": {
+    "mikey179/vfsStream": "1.4.*@dev",
+    "phpunit/phpunit": "~4.7.0"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TYPO3\\CMS\\Backend\\Tests\\": "htdocs/typo3/sysext/backend/Tests/",
+      "TYPO3\\CMS\\Belog\\Tests\\": "htdocs/typo3/sysext/belog/Tests/",
+      "TYPO3\\CMS\\Beuser\\Tests\\": "htdocs/typo3/sysext/beuser/Tests/",
+      "TYPO3\\CMS\\Core\\Tests\\": "htdocs/typo3/sysext/core/Tests/",
+      "TYPO3\\CMS\\Dbal\\Tests\\": "htdocs/typo3/sysext/dbal/Tests/",
+      "TYPO3\\CMS\\Documentation\\Tests\\": "htdocs/typo3/sysext/documentation/Tests/",
+      "TYPO3\\CMS\\Extbase\\Tests\\": "htdocs/typo3/sysext/extbase/Tests/",
+      "TYPO3\\CMS\\Extensionmanager\\Tests\\": "htdocs/typo3/sysext/extensionmanager/Tests/",
+      "TYPO3\\CMS\\Felogin\\Tests\\": "htdocs/typo3/sysext/felogin/Tests/",
+      "TYPO3\\CMS\\Fluid\\Tests\\": "htdocs/typo3/sysext/fluid/Tests/",
+      "TYPO3\\CMS\\Form\\Tests\\": "htdocs/typo3/sysext/form/Tests/",
+      "TYPO3\\CMS\\Frontend\\Tests\\": "htdocs/typo3/sysext/frontend/Tests/",
+      "TYPO3\\CMS\\Impexp\\Tests\\": "htdocs/typo3/sysext/impexp/Tests/",
+      "TYPO3\\CMS\\IndexedSearch\\Tests\\": "htdocs/typo3/sysext/indexed_search/Tests/",
+      "TYPO3\\CMS\\Install\\Tests\\": "htdocs/typo3/sysext/install/Tests/",
+      "TYPO3\\CMS\\Lang\\Tests\\": "htdocs/typo3/sysext/lang/Tests/",
+      "TYPO3\\CMS\\Lowlevel\\Tests\\": "htdocs/typo3/sysext/lowlevel/Tests/",
+      "TYPO3\\CMS\\Mediace\\": "htdocs/typo3/sysext/mediace/Classes/",
+      "TYPO3\\CMS\\Mediace\\Tests\\": "htdocs/typo3/sysext/mediace/Tests/",
+      "TYPO3\\CMS\\Recordlist\\Tests\\": "htdocs/typo3/sysext/recordlist/Tests/",
+      "TYPO3\\CMS\\Reports\\Tests\\": "htdocs/typo3/sysext/reports/Tests/",
+      "TYPO3\\CMS\\Rsaauth\\Tests\\": "htdocs/typo3/sysext/rsaauth/Tests/",
+      "TYPO3\\CMS\\Saltedpasswords\\Tests\\": "htdocs/typo3/sysext/saltedpasswords/Tests/",
+      "TYPO3\\CMS\\Scheduler\\Tests\\": "htdocs/typo3/sysext/scheduler/Tests/",
+      "TYPO3\\CMS\\Sv\\Tests\\": "htdocs/typo3/sysext/sv/Tests/",
+      "TYPO3\\CMS\\Workspaces\\Tests\\": "htdocs/typo3/sysext/workspaces/Tests/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": "htdocs"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/LinkCreator.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins",
+      "cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/ImageEditor.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins"
+    ],
+    "post-update-cmd": [
+      "cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/LinkCreator.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins",
+      "cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/ImageEditor.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins"
+    ]
+  }
 }
